@@ -34,7 +34,7 @@ header{
 }
 
 
-nav, #container{
+nav, #container, #contenu-barre-superieure{
 
 width: 960px;
 margin: auto;
@@ -111,5 +111,11 @@ nav ul li a:hover{
 
 #container{
 
-    background-color: green;
+}
+
+.bloc-container{
+
+    width:inherit;
+    background-color: rgb(200,200,200);
+    margin: 50px 0;
 }
