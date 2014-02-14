@@ -6,7 +6,7 @@
 		<title>Titre</title>
 		<link rel="stylesheet" type="text/css" href="style.css" />
 		<meta name="viewport" content="width=device-width" />
-	
+
 	</head>
 
 
@@ -14,7 +14,7 @@
 	<body>
 
 
-		
+
 
             <div id="barre-supérieure">
                 barre supérieure : Boutons login/sign up
@@ -35,7 +35,7 @@
 
             </nav>
 
-		
+
 
             <div id="slider">
                 Slider
@@ -44,11 +44,45 @@
         </header>
 
 
-        <div id="container"> 
+        <div id="container">
 
+            <ul>
+                <li class="filter" data-filter="cat1">cat1</li>
+                <li class="filter" data-filter="cat2">cat2</li>
+                <li class="filter" data-filter="cat3">cat3</li>
+            </ul>
+            <ul id="Grid">
+                <li id="cat1" class="mix cat1"></li>
+                <li id="cat2" class="mix cat2"></li>
+                <li id="cat2" class="mix cat2"></li>
+                <li id="cat2" class="mix cat2"></li>
+                <li id="cat1" class="mix cat1"></li>
+                <li id="cat1" class="mix cat1"></li>
+                <li id="cat1" class="mix cat1"></li>
+                <li id="cat1" class="mix cat1"></li>
+                <li id="cat1" class="mix cat1"></li>
+                <li id="cat3" class="mix cat3"></li>
+                <li id="cat3" class="mix cat3"></li>
+                <li id="cat3" class="mix cat3"></li>
+                <li id="cat2" class="mix cat2"></li>
+                <li id="cat2" class="mix cat2"></li>
+                <li id="cat2" class="mix cat2"></li>
+                <li id="cat2" class="mix cat2"></li>
+                <li id="cat3" class="mix cat3"></li>
+                <li id="cat3" class="mix cat3"></li>
+                <li id="cat1" class="mix cat1"></li>
+                <li id="cat3" class="mix cat3"></li>
+            </ul>
         </div>
 
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+<script src="jquery.mixitup.min.js"></script>
+<script type="text/javascript">
+$(function(){
 
+    $('#Grid').mixitup();
+
+});</script>
 	</body>
 
 </html>
