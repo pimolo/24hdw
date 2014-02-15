@@ -1,0 +1,423 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+
+  <meta charset="UTF-8" />
+  <title>Cinéma RedRoom</title>
+  <link rel="stylesheet" type="text/css" href="style.css" />
+  <meta name="viewport" content="width=device-width" />
+  <link rel="icon" type="image/png" href="images/favicon.jpg" />
+  <link href='http://fonts.googleapis.com/css?family=Roboto:300,400' rel='stylesheet' type='text/css'>
+  <link href='http://fonts.googleapis.com/css?family=Yanone+Kaffeesatz' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="scripts/qunit-1.10.0.css" />
+  <!-- Tri -->
+  <!-- <link rel="stylesheet" type="text/css" href="css/default.css" /> -->
+  <link rel="stylesheet" type="text/css" href="css/component.css" />
+
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+  <script src="js/modernizr.custom.js"></script>
+  <script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-7243260-2']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+})();
+
+</script>
+
+
+
+
+
+
+  <script src="scripts/slideshow.js"></script>
+    <script src="scripts/qunit-1.10.0.js"></script>
+
+
+<!-- Inclusion script Slider -->
+    <script src="scripts/slider.js"></script> 
+<!-- FIN -->
+
+
+
+
+</head>
+
+
+<script type="text/javascript" src="scripts/jquery.parallax-1.1.3.js"></script>
+
+
+<script type="text/javascript">
+$(document).ready(function(){
+
+
+    //.parallax(xPosition, speedFactor, outerHeight) options:
+    //xPosition - Horizontal position of the element
+    //inertia - speed to move relative to vertical scroll. Example: 0.1 is one tenth the speed of scrolling, 2 is twice the speed of scrolling
+    //outerHeight (true/false) - Whether or not jQuery should use it's outerHeight option to determine when a section is in the viewport
+    $('body').parallax("90%", 1);
+
+})
+</script>
+
+
+
+
+
+<body>
+<header>
+    <div id="barre-superieure">
+        <div id="contenu-barre-superieure">
+            <img src="images/logo.png" alt="" id="logo"/>
+            <span>Cinéma a Compiègne</span>
+            <a href=""><span class="barre-superieure-bouton">Connexion</span></a>
+            <a href=""><span class="barre-superieure-bouton">Inscription</span></a>
+        </div>
+
+    </div>
+        <nav class="correction">
+            <ul class="correction">
+                <li class="correction"><a href="#accueil">ACCUEIL</a></li>
+                <li class="correction"><a href="#films">FILMS</a></li>
+                <li class="correction"><a href="#contact">CONTACT</a></li>
+            </ul>
+        
+            <form method="post" action="traitement.php">
+                <input type="text" name="pseudo" placeholder="Rechercher" />
+            </form>
+        </nav>
+</header>
+
+
+<div id="slider">
+    <div class="slideshow" data-visible="4" data-pagination="false" data-offset="3">
+        <ul class="carousel">
+            <li class="slide">
+                <img src="images/affiches/affiche_1.jpg" alt="" width="260" height="400" />
+                <p> 
+                    <strong>Gravity</strong> <br/>
+                    Durée: 2h14<br/>
+                    Tout publics.
+                </p> 
+            </li>
+            <li class="slide">
+                <img src="images/affiches/affiche_2.jpg" alt="" width="260" height="400" />
+                 <p> 
+                    <strong>La voleuse de livres</strong> <br/>
+                    Durée: 1h44<br/>
+                    Tout publics.
+                </p> 
+            </li>
+            <li class="slide">
+                <img src="images/affiches/affiche_3.jpg" alt="" width="260" height="400" />
+                <p> 
+                    <strong>Squirrels</strong> <br/>
+                    Durée: 1h56<br/>
+                    Interdit aux -12 ans
+                </p> 
+            </li>
+            <li class="slide">
+                <img src="images/affiches/affiche_4.jpg" alt="" width="260" height="400" />
+                 <p> 
+                    <strong>Parkland</strong> <br/>
+                    Durée: 2h26<br/>
+                    Tout publics
+                </p> 
+            </li>
+            <li class="slide">
+                <img src="images/affiches/affiche_5.jpg" alt="" width="260" height="400" />
+                <p> 
+                    <strong>Pompei</strong> <br/>
+                    Durée: 1h39<br/>
+                    Interdit aux -12 ans
+                </p> 
+            </li>
+            <li class="slide">
+                <img src="images/affiches/affiche_6.jpg" alt="" width="260" height="400" />
+                 <p> 
+                    <strong>Gare du Nord</strong> <br/>
+                    Durée: 2h11<br/>
+                    Tout publics
+                </p> 
+            </li>
+            <li class="slide">
+                <img src="images/affiches/affiche_7.jpg" alt="" width="260" height="400" />
+                  <p> 
+                    <strong>Vampire Academy</strong> <br/>
+                    Durée: 2h01<br/>
+                    Tout publics
+                </p> 
+            </li>
+            <li class="slide">
+                <img src="images/affiches/affiche_8.jpg" alt="" width="260" height="400" />
+                  <p> 
+                    <strong>Mr Peabody et Shermann </strong> <br/>
+                    Durée: 1h24<br/>
+                    Tout publics
+                </p> 
+            </li>
+            <li class="slide">
+                <img src="images/affiches/affiche_9.jpg" alt="" width="260" height="400" />
+                <p> 
+                    <strong>Le crocodile du Botswanga</strong> <br/>
+                    Durée: 1h44<br/>
+                    Tout publics
+                </p> 
+            </li>
+            <li class="slide">
+                <img src="images/affiches/affiche_10.jpg" alt="" width="260" height="400" />
+                <p> 
+                    <strong>Tom le cancre</strong> <br/>
+                    Durée: 1h56<br/>
+                    Tout publics
+                </p> 
+            </li>
+            <li class="slide">
+                <img src="images/affiches/affiche_11.jpg" alt="" width="260" height="400" />
+                 <p> 
+                    <strong>L'ile des Miam-nimaux</strong> <br/>
+                    Durée: 1h41<br/>
+                    Tout publics
+                </p> 
+            </li>
+            <li class="slide">
+                <img src="images/affiches/affiche_12.jpg" alt="" width="260" height="400" />
+                <p> 
+                    <strong>Tad l'Explorateur</strong> <br/>
+                    Durée: 1h43<br/>
+                    Tout publics
+                </p> 
+            </li>
+            <li class="slide">
+                <img src="images/affiches/affiche_13.jpg" alt="" width="260" height="400" />
+                <p> 
+                    <strong>Tu seras Sumo</strong> <br/>
+                    Durée: 2h21<br/>
+                    Tout publics
+                </p> 
+            </li>
+            <li class="slide">
+                <img src="images/affiches/affiche_14.jpg" alt="" width="260" height="400" />
+                 <p> 
+                    <strong>Un p'tit gars du Menilmontant</strong> <br/>
+                    Durée: 2h14<br/>
+                    Interdit -10 ans
+                </p> 
+            </li>
+        </ul>
+    </div>
+</div>
+
+
+<div id="container">
+
+    <ul class="controls" id="films">
+        <li class="filter filter-first" data-filter="cat1">LES FILMS A L'AFFICHE</li>
+        <li class="filter" data-filter="cat2">SORTIES DE LA SEMAINE</li>
+        <li class="filter" data-filter="cat3">SORTIES PROCHAINES</li>
+    </ul>
+
+
+
+<!--             <ul id="Grid">
+                <li id="cat1" class="mix cat1"></li>
+                <li id="cat2" class="mix cat2"></li>
+                <li id="cat2" class="mix cat2"></li>
+                <li id="cat2" class="mix cat2"></li>
+                <li id="cat1" class="mix cat1"></li>
+                <li id="cat1" class="mix cat1"></li>
+                <li id="cat1" class="mix cat1"></li>
+                <li id="cat1" class="mix cat1"></li>
+                <li id="cat1" class="mix cat1"></li>
+                <li id="cat3" class="mix cat3"></li>
+                <li id="cat3" class="mix cat3"></li>
+                <li id="cat3" class="mix cat3"></li>
+                <li id="cat2" class="mix cat2"></li>
+                <li id="cat2" class="mix cat2"></li>
+                <li id="cat2" class="mix cat2"></li>
+                <li id="cat2" class="mix cat2"></li>
+                <li id="cat3" class="mix cat3"></li>
+                <li id="cat3" class="mix cat3"></li>
+                <li id="cat1" class="mix cat1"></li>
+                <li id="cat3" class="mix cat3"></li>
+            </ul> -->
+
+
+
+
+            <div class="tri">
+                <div class="main">
+                    <ul id="Grid" class="og-grid">
+                        <li class="mix cat1">
+                            <a href="" data-largesrc="images/affiches/affiche_f1.jpg" data-title="Albatar - Le Corsaire de l'Espace" data-description="2977. Albator, capitaine du vaisseau Arcadia, est un corsaire de l’espace. Il est condamné à mort, mais reste insaisissable.  Le jeune Yama, envoyé pour l’assassiner, s’infiltre dans l’Arcadia, alors qu’Albator décide d’entrer en guerre contre la Coalition Gaia afin de défendre sa planète d’origine, la Terre." >
+                                <img src="images/affiches/affiche_f1.jpg" width="200" height="320" alt="img01" />
+
+                            </a>
+                        </li>
+                        <li class="mix cat1">
+                            <a href="" data-largesrc="images/affiches/affiche_f2.jpg" data-title="La Momie" data-description="De son enfance à la gloire, de ses victoires à ses blessures, de Belleville à New York, l'exceptionnel parcours d'Edith Piaf. A travers un destin plus incroyable qu'un roman, découvrez l'âme d'une artiste et le coeur d'une femme. Intime, intense, fragile et indestructible, dévouée à son art jusqu'au sacrifice, voici la plus immortelle des chanteuses... ">
+                                <img src="images/affiches/affiche_f2.jpg" width="200" height="320" alt="img02"/>
+                            </a>
+                        </li>
+                        <li class="mix cat1">
+                            <a href="" data-largesrc="images/affiches/affiche_f3.jpg" data-title="The Fartist" data-description="Hollywood 1927. George Valentin est une vedette du cinéma muet à qui tout sourit. L'arrivée des films parlants va le faire sombrer dans l'oubli. Peppy Miller, jeune figurante, va elle, être propulsée au firmament des stars. Ce film raconte l'histoire de leurs destins croisés, ou comment la célébrité, l'orgueil et l'argent peuvent être autant d'obstacles à leur histoire d'amour.">
+                                <img src="images/affiches/affiche_f3.jpg" width="200" height="320" alt="img03"/>
+                            </a>
+                        </li>
+                        <li class="mix cat1">
+                            <a href="" data-largesrc="images/affiches/affiche_f4.jpg" data-title="The Pi'anus" data-description="Durant la Seconde Guerre mondiale, Wladyslaw Szpilman, un célèbre pianiste juif polonais, échappe à la déportation mais se retrouve parqué dans le ghetto de Varsovie dont il partage les souffrances, les humiliations et les luttes héroïques. Il parvient à s'en échapper et se réfugie dans les ruines de la capitale. Un officier allemand, qui apprécie sa musique, l'aide et lui permet de survivre.">
+                                <img src="images/affiches/affiche_f4.jpg" width="200" height="320" alt="img04"/>
+                            </a>
+                        </li>
+                        <li class="mix cat3">
+                            <a href="http://cargocollective.com/jaimemartinez/" data-largesrc="images/affiches/affiche_4.jpg" data-title="Parkland" data-description="
+
+22 novembre 1963, 12 h 38. C’est un patient peu ordinaire qui arrive en urgence au Parkland Memorial Hospital de Dallas. Il s’agit du président John F. Kennedy, sur qui on vient de tirer alors qu’il traversait Dealey Plaza en limousine décapotée, acclamé par la foule. Tandis que la nouvelle se répand dans le monde, une page méconnue de l’histoire s’écrit dans cet hôpital qui n’était absolument pas préparé à affronter cet événement. Autour du corps, les questions et les émotions s’accumulent. La pression monte. Proches, anonymes, officiels, tous vont être confrontés à une prise de conscience et à des décisions qui changeront leur vie à jamais…">
+                                <img src="images/affiches/affiche_4.jpg" width="200" height="320"  alt="img05"/>
+                            </a>
+                        </li>
+                        <li class="mix cat2">
+                            <a href="http://cargocollective.com/jaimemartinez/" data-largesrc="images/affiches/affiche_2.jpg" data-title="La voleuse de livres" data-description="L’histoire de Liesel, une jeune fille envoyée dans sa famille d’adoption allemande pendant la Seconde Guerre mondiale. Elle apprend à lire avec le soutien de sa nouvelle famille, et de Max, un réfugié Juif qu’ils cachent sous leurs escaliers. Pour Liesel et Max, le pouvoir des mots ainsi que leur propre imagination vont devenir leur seule échappatoire face à la guerre.">
+                                <img src="images/affiches/affiche_2.jpg" width="200" height="320" alt="img06"/>
+                            </a>
+                        </li>
+                        <li class="mix cat3">
+                            <a href="http://cargocollective.com/jaimemartinez/" data-largesrc="images/affiches/affiche_1.jpg" data-title="Gravity" data-description="Pour sa première expédition à bord d'une navette spatiale, le docteur Ryan Stone, brillante experte en ingénierie médicale, accompagne l'astronaute chevronné Matt Kowalsky. Mais alors qu'il s'agit apparemment d'une banale sortie dans l'espace, une catastrophe se produit. Lorsque la navette est pulvérisée, Stone et Kowalsky se retrouvent totalement seuls, livrés à eux-mêmes dans l'univers. Le silence assourdissant autour d'eux leur indique qu'ils ont perdu tout contact avec la Terre - et la moindre chance d'être sauvés. Peu à peu, ils cèdent à la panique, d'autant plus qu'à chaque respiration, ils consomment un peu plus les quelques réserves d'oxygène qu'il leur reste.
+
+Mais c'est peut-être en s'enfonçant plus loin encore dans l'immensité terrifiante de l'espace qu'ils trouveront le moyen de rentrer sur Terre...">
+                                <img src="images/affiches/affiche_1.jpg" width="200" height="320" alt="img07"/>
+                            </a>
+                        </li>
+                        <li class="mix cat3">
+                            <a href="http://cargocollective.com/jaimemartinez/" data-largesrc="images/affiches/affiche_3.jpg" data-title="Squirrels" data-description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque in malesuada nunc. Aenean id elit vitae ipsum tempus semper eget ut purus. Sed aliquam nunc quis metus interdum, eu eleifend turpis placerat. Pellentesque facilisis tellus nec egestas pretium. Nullam ut consequat sapien. Donec dolor metus, sagittis a lectus a, pretium tincidunt nisl. Integer tristique risus ac dui sollicitudin, id pretium lectus rutrum. Donec gravida nibh id odio tincidunt, a tristique sem ultricies. Quisque pulvinar consectetur tortor, ac porta lacus luctus a. Aliquam non eros lectus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. ">
+                                <img src="images/affiches/affiche_3.jpg" width="200" height="320" alt="img08"/>
+                            </a>
+                        </li>
+                        <li class="mix cat2">
+                            <a href="http://cargocollective.com/jaimemartinez/" data-largesrc="images/affiches/affiche_9.jpg" data-title="Le crocodile du Botswanka" data-description="
+
+Leslie Konda, jeune footballeur français talentueux, repéré à son adolescence par Didier, un agent de faible envergure qui a su le prendre sous sa coupe, vient de signer son premier contrat d’attaquant dans un grand club espagnol. Dans le même temps, sa notoriété grandissante et ses origines du Botswanga, petit état pauvre d’Afrique centrale, lui valent une invitation par le Président de la République en personne : Bobo Babimbi, un passionné de football, fraîchement installé au pouvoir après un coup d’état militaire.">
+                                <img src="images/affiches/affiche_9.jpg" width="200" height="320" alt="img09"/>
+                            </a>
+                        </li>
+                        <li class="mix cat2">
+                            <a href="http://cargocollective.com/jaimemartinez/" data-largesrc="images/affiches/affiche_6.jpg" data-title="Gare du Nord" data-description="
+
+Paris, Gare du Nord, tout peut y arriver, même des trains. On aimerait y rester, mais il faut se dépêcher... Comme des milliers de vies qui s’y croisent, Ismaël, Mathilde, Sacha et Joan vont s’y rencontrer. Chaque jour, Ismaël est ébloui, fasciné, épuisé par ce lieu. C’est sur le quai du RER qu’il voit Mathilde pour la première fois. Peu à peu, ils tombent amoureux. Ils croisent Sacha et Joan. Sacha est à la recherche de sa fille disparue, Joan passe sa vie dans cette gare entre Lille, Londres et Paris. La gare est comme une bulle que tous traversent, Français, immigrés, émigrés, voyageurs, fantômes... C’est un carrefour où chaque vie passe vite et disparait.">
+                                <img src="images/affiches/affiche_6.jpg" width="200" height="320" alt="img10"/>
+                            </a>
+                        </li>
+                        <li class="mix cat2">
+                            <a href="http://cargocollective.com/jaimemartinez/" data-largesrc="images/affiches/affiche_14.jpg" data-title="Wakame grape maize" data-description="Melon parsley pumpkin brussels sprout scallion catsear. Aubergine scallion garlic pumpkin parsnip broccoli rabe salad kombu chicory chickpea garbanzo bitterleaf.">
+                                <img src="images/affiches/affiche_14.jpg" width="200" height="320" alt="img11"/>
+                            </a>
+                        </li>
+                        <li class="mix cat2">
+                            <a href="http://cargocollective.com/jaimemartinez/" data-largesrc="images/affiches/affiche_8.jpg" data-title="Catsear celery turnip" data-description="Cabbage bamboo shoot broccoli rabe chickpea chard sea lettuce lettuce ricebean artichoke earthnut pea aubergine okra brussels sprout avocado tomato.">
+                                <img src="images/affiches/affiche_8.jpg" width="200" height="320"  alt="img12"/>
+                            </a>
+                        </li>
+                        <li class="mix cat3">
+                            <a href="http://cargocollective.com/jaimemartinez/" data-largesrc="images/affiches/affiche_13.jpg" data-title="Cabbage bamboo shoot" data-description="Kohlrabi fennel taro salsify bok choy arugula bell pepper gourd groundnut sierra leone bologi pumpkin.">
+                                <img src="images/affiches/affiche_13.jpg" width="200" height="320" alt="img13"/>
+                            </a>
+                        </li>
+                        <li class="mix cat3">
+                            <a href="http://cargocollective.com/jaimemartinez/" data-largesrc="images/affiches/affiche_11.jpg" data-title="Dandelion horseradish" data-description="Bell pepper eggplant water spinach bell pepper radicchio kale artichoke earthnut pea beet greens carrot celtuce peanut radish mustard jícama tomato bamboo shoot quandong.">
+                                <img src="images/affiches/affiche_11.jpg" width="200" height="320" alt="img14"/>
+                            </a>
+                        </li>
+                        <li class="mix cat2">
+                            <a href="http://cargocollective.com/jaimemartinez/" data-largesrc="images/affiches/affiche_7.jpg" data-title="Asparagus nori burdock" data-description="Catsear celery turnip greens bush tomato okra parsley bell pepper cabbage bamboo shoot dulse kombu shallot quandong lettuce seakale.">
+                                <img src="images/affiches/affiche_7.jpg" width="200" height="320" alt="img15"/>
+                            </a>
+                        </li> 
+                    </ul>
+                </div>
+            </div>
+        </div><!-- /container -->
+
+        <div id="contact">
+
+            <div id="bloc-contact">
+
+               <h1>Nous Contacter</h1>
+
+               <div id="contact-gauche">
+
+                    <form method="post" action="traitement.php">
+                        <p>
+                            <label>Adresse e-mail</label>:<br/> <input type="text" name="email" /><br/><br/>
+                            <label>Confirmez votre adresse e-mail</label>:<br/><input type="text" name="confirm-email" /><br/><br/>
+                            <label>Sujet du message</label>:<br/><input type="text" name="sujet" /><br/><br/>
+                            <label>Votre message</label>:<br />
+                            <textarea name="message" rows="10" cols="50"></textarea>
+                        </p>
+                    </form>
+                </div>
+                <div id="contact-droit">
+
+                   <!--  <iframe width="100%" height="350" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.fr/maps?f=q&amp;source=s_q&amp;hl=fr&amp;geocode=&amp;q=I.U.T.+de+Troyes,+Rue+Quebec,+Troyes&amp;aq=t&amp;sll=48.292406,4.07612&amp;sspn=0.07458,0.154324&amp;ie=UTF8&amp;hq=I.U.T.+de+Troyes,+Rue+Quebec,+Troyes&amp;t=m&amp;ll=48.268165,4.079701&amp;spn=0.006295,0.006295&amp;output=embed"></iframe><br /><small><a href="https://maps.google.fr/maps?f=q&amp;source=embed&amp;hl=fr&amp;geocode=&amp;q=I.U.T.+de+Troyes,+Rue+Quebec,+Troyes&amp;aq=t&amp;sll=48.292406,4.07612&amp;sspn=0.07458,0.154324&amp;ie=UTF8&amp;hq=I.U.T.+de+Troyes,+Rue+Quebec,+Troyes&amp;t=m&amp;ll=48.268165,4.079701&amp;spn=0.006295,0.006295" style="color:#0000FF;text-align:left">Agrandir le plan</a></small>
+ -->
+
+                </div>
+            </div>
+        </div>
+
+    <footer>
+        <ul>
+            <li>Crédits</li>
+            <li>Plan du Site</li>
+            <li>Mentions Légales</li>
+            <li>Cinéma RedRoom 2014</li>
+            <li>Tous droits réservés</li>
+        </ul>
+    </footer>
+    
+
+    <script src="jquery.mixitup.min.js"></script>
+    <script type="text/javascript">
+    $(function(){
+
+        $('#Grid').mixitup();
+
+    });</script>
+
+
+  
+<script src="js/grid.js"></script>
+<script>
+$(function() {
+    Grid.init();
+});
+</script>
+
+
+<script>
+   $(document).ready(function(){
+    $('a[href^="#"]').on('click',function (e) {
+        e.preventDefault();
+
+        var target = this.hash,
+        $target = $(target);
+
+        $('html, body').stop().animate({
+            'scrollTop': $target.offset().top
+        }, 900, 'swing', function () {
+            window.location.hash = target;
+        });
+    });
+});
+</script>
+
+<script src="scripts/jquery.sticky.js"></script>
+<script> $(document).ready(function(){ $("nav").sticky({topSpacing:0}); }); </script>
+
+</body>
+
+</html>
