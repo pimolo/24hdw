@@ -6,6 +6,7 @@
 		<title>Titre</title>
 		<link rel="stylesheet" type="text/css" href="style.css" />
 		<meta name="viewport" content="width=device-width" />
+        <link href='http://fonts.googleapis.com/css?family=Roboto:300,400' rel='stylesheet' type='text/css'>
       
 
 	
@@ -24,7 +25,7 @@ $(document).ready(function(){
     //xPosition - Horizontal position of the element
     //inertia - speed to move relative to vertical scroll. Example: 0.1 is one tenth the speed of scrolling, 2 is twice the speed of scrolling
     //outerHeight (true/false) - Whether or not jQuery should use it's outerHeight option to determine when a section is in the viewport
-    $('body').parallax("100%", 0.2);
+    $('body').parallax("100%", 0.26);
    
 
 })
@@ -43,17 +44,23 @@ $(document).ready(function(){
             <div id="barre-superieure">
                 <div id="contenu-barre-superieure">
                     <img src="images/logo.png" alt=""/>
-                        Connection
-                        Inscription
+                        
+                        <a href=""><span class="barre-superieure-bouton">Connection</span></a>
+                        <a href=""><span class="barre-superieure-bouton">Inscription</span></a>
                 </div>    
             </div>
             <nav>
 
-                 <ul id="menu">
+                 <ul>
                     <li><a href="#">ACCUEIL</a></li>
                     <li><a href="#">FILMS</a></li>
-                    <li><a href="#">CONTACT</a></li>
+                    <li><a href="#">CONTACT</a></li>  
                 </ul>
+
+                <form method="post" action="traitement.php">
+                   <input type="text" name="pseudo" placeholder="Rechercher" />
+                </form>
+
             </nav>
 		</header>
 

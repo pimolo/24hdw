@@ -1,10 +1,11 @@
 body{
 	margin:0;
     padding:0;
-    /*background: url('images/background.jpg') repeat scroll;*/
+    background: url('images/background.jpg') repeat scroll;
     background-size: 100%;
     width: 100%;
-    font-family: helvetica;
+    font-family: 'Roboto', helvetica;
+    font-weight: 300;
 
 }   
 
@@ -31,14 +32,40 @@ header img{
     position: absolute;
     top: 0px;
     left:0;
+    height: 135px;
 }
 
 #barre-superieure{
-    background-color: #222222;
+    background-color: #ed0003;
     height: 60px;
-    
 
 }
+
+#barre-superieure .barre-superieure-bouton{
+
+    color: #890000;
+    background-color: white;
+    padding: 9px 12px;
+    border-radius: 4px;
+
+
+}
+
+#barre-superieure .barre-superieure-bouton:hover{
+
+    background-color: #f7f7f7;
+  
+
+
+}
+
+#barre-superieure .barre-superieure-bouton a{
+
+    color: #890000;
+   
+
+}
+
 
 #contenu-barre-superieure{
 
@@ -53,8 +80,8 @@ header img{
 
 nav{
 
-margin-left: 300px;
 padding: 15px 0;
+background-color: white;
     
 }
 
@@ -67,22 +94,42 @@ nav ul{
 
 
 padding:0;
+padding-left: 350px;
 margin:0;
-
+width: 560px;
 font-size: 30px;
+display: inline-block;
 
 
 }
 
+
+
+nav form {
+    display: inline-block;
+    position: relative;
+
+}
+
+nav form input{
+position: absolute;
+bottom: 0px;
+right: -205px;
+
+}
 
 nav ul li{
 
     display:inline;
-    padding: 30px;
+    padding: 15px 30px;
    
 
 }
+nav ul li:hover{
 
+    background-color: #e3e3e3;
+
+}
 nav ul li a{
 
     text-decoration: none;
@@ -124,4 +171,8 @@ nav ul li a:hover{
     width:inherit;
     background-color: rgb(200,200,200);
     margin: 50px 0;
+}
+
+a{
+    text-decoration: none;
 }
