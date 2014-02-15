@@ -1,3 +1,4 @@
+
 body{
 	margin:0;
     padding:0;
@@ -11,41 +12,15 @@ body{
 
 
 
-#container #Grid .mix{
-    display: none;
-    opacity: 0;
-    width: 200px;
-    height: 200px;
-    vertical-align: top;
-    margin-bottom: 20px;
-    background: #ccc;
-    color: #fff;
 
-    font-size: 30px;
-    text-align: center;
-    line-height: 200px;
-}
-
-#container #Grid #cat1 {
-    background-color: red;
-}
-
-#container #Grid #cat2 {
-    background-color: blue;
-}
-
-#container #Grid #cat3 {
-    background-color: green;
-}
-
-header{
+header, #contact{
 
     width: 100%;
 
 }
 
 
-#container, #contenu-barre-superieure, #menu{
+#container, #contenu-barre-superieure, #menu, #bloc-contact{
 
     width: 960px;
     margin: auto;
@@ -59,6 +34,8 @@ header img{
     top: 0px;
     left:0;
     height: 135px;
+    z-index: 100;
+
 }
 
 #barre-superieure{
@@ -71,7 +48,7 @@ header img{
 
     color: #890000;
     background-color: white;
-    padding: 9px 12px;
+    padding: 7px 12px;
     border-radius: 4px;
 
 
@@ -106,7 +83,7 @@ header img{
 
 nav{
 
-padding: 15px 0;
+padding: 5px 0 0 0;
 background-color: white;
     
 }
@@ -125,6 +102,7 @@ margin:0;
 width: 560px;
 font-size: 30px;
 display: inline-block;
+font-family: 'Yanone Kaffeesatz';
 
 
 }
@@ -147,7 +125,7 @@ right: -205px;
 nav ul li{
 
     display:inline;
-    padding: 15px 30px;
+    padding: 15px 50px;
    
 
 }
@@ -168,24 +146,24 @@ nav ul li a:hover{
 }
 
 
+
+
+/*SLIDER : INTEGRATION DES AFFICHES */
+
+
 #slider{
 
-    background-color: gray;
     height: 400px;
-}
-
-.element-slider{
-
-    width: 33%;
-    float: left;
-    height: 100%;
+    margin:0;
+    background-color: white;
   
 }
 
-.last-element-slider{
 
-        width: 34%;
-}
+/* /////////////////   */
+
+
+
 
 
 #container{
@@ -199,6 +177,80 @@ nav ul li a:hover{
     margin: 50px 0;
 }
 
+
+
+#container #Grid .mix{
+    display: none;
+    opacity: 0;
+    width: 180px;
+    height: 180px;
+    vertical-align: top;
+    margin-bottom: 20px;
+    background: #ccc;
+    color: #fff;
+
+    font-size: 30px;
+    text-align: center;
+    line-height: 200px;
+}
+
+#container #Grid #cat1 {
+    background-color: red;
+}
+
+#container #Grid #cat2 {
+    background-color: blue;
+}
+
+#container #Grid #cat3 {
+    background-color: green;
+}
+
+
+#contact-gauche{
+
+    width: 450px;
+    margin-right: 60px;
+    float: left;
+
+}
+
+
+#contact-droit{
+
+    width: 450px;
+    float: left;
+
+
+    
+}
+
+
 a{
     text-decoration: none;
+}
+
+#contact{
+background-color: #890000;
+width: 100%;
+height: 500px;
+color: white;
+padding-top: 10px;
+}
+
+
+footer{
+
+
+    border-top: 1px solid #5c5c5c;
+    height: 50px;
+    text-align: center;
+    background-color: #323232;
+}
+
+footer ul li{
+
+    display:inline;
+    padding: 0 20px;
+    color:white;
 }

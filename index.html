@@ -3,10 +3,17 @@
 	<head>
 
 		<meta charset="UTF-8" />
-		<title>Titre</title>
+		<title>Cinéma RedRoom</title>
 		<link rel="stylesheet" type="text/css" href="style.css" />
 		<meta name="viewport" content="width=device-width" />
         <link href='http://fonts.googleapis.com/css?family=Roboto:300,400' rel='stylesheet' type='text/css'>
+        <link href='http://fonts.googleapis.com/css?family=Yanone+Kaffeesatz' rel='stylesheet' type='text/css'>
+        <link rel="stylesheet" type="text/css" href="css/default.css" />
+        <link rel="stylesheet" type="text/css" href="css/component.css" />
+        <link rel="stylesheet" href="example.css" />
+        <link rel="stylesheet" href="slideshow.css" />
+        <link rel="stylesheet" href="scripts/qunit-1.10.0.css" />
+        <script src="js/modernizr.custom.js"></script>
       
 
 	
@@ -15,18 +22,17 @@
 
 <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
 <script type="text/javascript" src="scripts/jquery.parallax-1.1.3.js"></script>
-<script type="text/javascript" src="scripts/jquery.localscroll-1.2.7-min.js"></script>
-<script type="text/javascript" src="scripts/jquery.scrollTo-1.4.2-min.js"></script>
+
 
 <script type="text/javascript">
 $(document).ready(function(){
-    $('#nav').localScroll(800);
+    
 
     //.parallax(xPosition, speedFactor, outerHeight) options:
     //xPosition - Horizontal position of the element
     //inertia - speed to move relative to vertical scroll. Example: 0.1 is one tenth the speed of scrolling, 2 is twice the speed of scrolling
     //outerHeight (true/false) - Whether or not jQuery should use it's outerHeight option to determine when a section is in the viewport
-    $('body').parallax("100%", 0.26);
+    $('body').parallax("100%", 0.3);
 
 })
 </script>
@@ -60,12 +66,61 @@ $(document).ready(function(){
             <div id="slider">
 
 
-                <div class="element-slider">Slide1</div>
-                <div class="element-slider">Slide2</div>
-                <div class="element-slider last-element-slider">Slide3</div>
 
 
-            </div>
+
+               <div class="slideshow" data-visible="4" data-pagination="false" data-offset="3">
+                    <ul class="carousel">
+                        <li class="slide">
+                            <img src="images/affiches/affiche_1.jpg" alt="" width="260" height="400" />
+                        </li>
+                        <li class="slide">
+                            <img src="images/affiches/affiche_2.jpg" alt="" width="260" height="400" />
+                        </li>
+                        <li class="slide">
+                            <img src="images/affiches/affiche_3.jpg" alt="" width="260" height="400" />
+                        </li>
+                        <li class="slide">
+                            <img src="images/affiches/affiche_4.jpg" alt="" width="260" height="400" />
+                        </li>
+                        <li class="slide">
+                            <img src="images/affiches/affiche_5.jpg" alt="" width="260" height="400" />
+                        </li>
+                        <li class="slide">
+                            <img src="images/affiches/affiche_6.jpg" alt="" width="260" height="400" />
+                        </li>
+                        <li class="slide">
+                            <img src="images/affiches/affiche_7.jpg" alt="" width="260" height="400" />
+                        </li>
+                        <li class="slide">
+                            <img src="images/affiches/affiche_8.jpg" alt="" width="260" height="400" />
+                        </li>
+                        <li class="slide">
+                            <img src="images/affiches/affiche_9.jpg" alt="" width="260" height="400" />
+                        </li>
+                         <li class="slide">
+                            <img src="images/affiches/affiche_10.jpg" alt="" width="260" height="400" />
+                        </li>
+                        <li class="slide">
+                            <img src="images/affiches/affiche_11.jpg" alt="" width="260" height="400" />
+                        </li>
+                        <li class="slide">
+                            <img src="images/affiches/affiche_12.jpg" alt="" width="260" height="400" />
+                        </li>
+                        <li class="slide">
+                            <img src="images/affiches/affiche_13.jpg" alt="" width="260" height="400" />
+                        </li>
+                        <li class="slide">
+                            <img src="images/affiches/affiche_14.jpg" alt="" width="260" height="400" />
+                        </li>
+                    </ul>
+                </div>
+
+
+                
+
+
+           </div>
         <div id="container">
 
             <ul>
@@ -130,11 +185,61 @@ $(document).ready(function(){
            </div>
 
             <div class="bloc-container">
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur nec tortor imperdiet ipsum gravida commodo. Cras scelerisque elit non egestas dignissim. Fusce ut eros venenatis, posuere erat egestas, interdum sapien. Aenean vulputate diam nisl, quis eleifend est lacinia eu. Praesent leo arcu, volutpat quis euismod quis, semper id est. Etiam bibendum dignissim leo id interdum. Ut in odio at tellus dictum tristique. Mauris varius purus vitae ipsum tempus commodo.
 
-        Nunc at odio diam. Nunc vel elit vulputate, bibendum libero vitae, placerat arcu. Mauris volutpat, dui ut dapibus euismod, mauris massa scelerisque enim, in ullamcorper tellus augue a lorem. Aliquam non suscipit felis. Mauris ultrices elit sit amet risus pellentesque interdum. Ut a luctus mauris, ut bibendum elit. Duis diam orci, volutpat vel metus malesuada, blandit congue lacus. Maecenas vulputate libero ut eleifend lobortis.
+               
+
+
+
+
+
            </div>
         </div>
+
+            <div id="contact">
+            
+                <div id="bloc-contact">
+
+                         <h1>Nous Contacter</h1>
+
+                        <div id="contact-gauche">
+                            
+                            <form method="post" action="traitement.php">
+                                <p>
+                                    <label>Adresse e-mail</label>:<br/> <input type="text" name="email" /><br/><br/>
+                                    <label>Confirmez votre adresse e-mail</label>:<br/><input type="text" name="confirm-email" /><br/><br/>
+                                    <label>Sujet du message</label>:<br/><input type="text" name="sujet" /><br/><br/>
+                                    <label>Votre message</label>:<br />
+                                    <textarea name="message" rows="10" cols="50"></textarea>
+                                </p>
+                            </form>
+
+                            
+                        </div>
+                        <div id="contact-droit">
+
+                            <iframe width="100%" height="350" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.fr/maps?f=q&amp;source=s_q&amp;hl=fr&amp;geocode=&amp;q=I.U.T.+de+Troyes,+Rue+Quebec,+Troyes&amp;aq=t&amp;sll=48.292406,4.07612&amp;sspn=0.07458,0.154324&amp;ie=UTF8&amp;hq=I.U.T.+de+Troyes,+Rue+Quebec,+Troyes&amp;t=m&amp;ll=48.268165,4.079701&amp;spn=0.006295,0.006295&amp;output=embed"></iframe><br /><small><a href="https://maps.google.fr/maps?f=q&amp;source=embed&amp;hl=fr&amp;geocode=&amp;q=I.U.T.+de+Troyes,+Rue+Quebec,+Troyes&amp;aq=t&amp;sll=48.292406,4.07612&amp;sspn=0.07458,0.154324&amp;ie=UTF8&amp;hq=I.U.T.+de+Troyes,+Rue+Quebec,+Troyes&amp;t=m&amp;ll=48.268165,4.079701&amp;spn=0.006295,0.006295" style="color:#0000FF;text-align:left">Agrandir le plan</a></small>
+
+                            
+                        </div>
+                    </div>
+
+                    
+            </div>
+                    <footer>
+
+                    <ul>
+                        <li>Crédits</li>
+                        <li>Plan du Site</li>
+                        <li>Mentions Légales</li>
+                        <li>Cinéma RedRoom 2014</li>
+                        <li>Tous droits réservés</li>
+                    </ul>
+
+
+
+                    </footer>
+
+
 
 <script src="jquery.mixitup.min.js"></script>
 <script type="text/javascript">
@@ -143,6 +248,188 @@ $(function(){
     $('#Grid').mixitup();
 
 });</script>
+
+
+<script src="scripts/slideshow.js"></script>
+    <script src="scripts/qunit-1.10.0.js"></script>
+
+    <script>
+        $(function()
+        {
+            var $s, api;
+
+            $.fx.off = true;
+            QUnit.config.reorder = false;
+
+            var lifecycle = {
+                setup: function()
+                {
+                    if ( ! api )
+                    {
+                        $s = $('.slideshow').slides();
+                        api = $s.eq(0).data('slides');
+                    }
+                }
+            };
+
+            module("Setup", lifecycle);
+
+            test("$(collection).slides()", function()
+            {
+                ok(api.count > 0, "Check slides are found");
+                ok(api.$pagination.length > 0, "Check pagination created");
+                ok(api.$next.length > 0, "Check next skip link created");
+                ok(api.$prev.length > 0, "Check previous skip link created");
+            });
+
+            test("API", function()
+            {
+                equal((typeof api).toLowerCase() == "object" && ! $.isEmptyObject(api), true, "API returned");
+            });
+
+            //
+            // API tests
+            //
+
+            module("Public API", lifecycle);
+
+            test(".hasNext()", function()
+            {
+                api.to(0);
+                equal(api.hasNext(), true, "First slide");
+
+                api.to( api.count -1 );
+                equal(api.hasNext(), false, "Last slide");
+            });
+
+            test(".hasPrevious()", function()
+            {
+                api.to(0);
+                equal(api.hasPrevious(), false, "First slide");
+
+                api.to( api.count - 1 );
+                equal(api.hasPrevious(), true, "Last slide");
+            });
+
+            test(".next()", function()
+            {
+                api.to(0);
+                var prev = api.current;
+
+                api.next();
+                equal(prev + 1, api.current, "Current slide equals last slide + 1");
+            });
+
+            test(".previous()", function()
+            {
+                api.to( api.count - 1 );
+                var prev = api.current;
+
+                api.previous();
+                equal(prev - 1, api.current, "Current slide equals last slide - 1");
+            });
+
+            test(".to()", function()
+            {
+                api.to(0);
+                equal(api.current, 0, "Go-to first slide");
+
+                api.to( api.count - 1 );
+                equal(api.current, api.count - 1, "Go-to last slide");
+
+                // loop
+                $.extend(api.opts, { loop: true });
+
+                api.to(0);
+                api.to( api.current - 1 );
+                equal(api.current, api.count - 1, "Out of bounds (0 - 1) - looping enabled");
+
+                api.to( api.count - 1 );
+                api.to( api.current + 1 );
+                equal(api.current, 0, "Out of bounds (total + 1) - looping enabled");
+
+                // no loop
+                $.extend(api.opts, { loop: false });
+
+                api.to(0);
+                api.to( api.current - 1 );
+                equal(api.current, 0, "Out of bounds (0 - 1) - looping disabled");
+
+                api.to( api.count - 1 );
+                api.to( api.current + 1 );
+                equal(api.current, api.count - 1, "Out of bounds (total + 1) - looping disabled");
+            });
+
+            test(".redraw()", function()
+            {
+                api.redraw("crossfade");
+                equal(api.opts.transition, "crossfade", "Test crossfade registered");
+
+                api.redraw("scroll");
+                equal(api.opts.transition, "scroll", "Test scroll registered");
+            });
+
+            //
+            // user controls
+            //
+
+            module("User controls", lifecycle);
+
+            test("Next skip link (looping)", function()
+            {
+                api.to(0);
+                api.$next.trigger('click');
+                equal(api.current, 1, "From first to second slide");
+
+                // loop
+                $.extend(api.opts, { loop: true });
+
+                api.to( api.count - 1 );
+                api.$next.trigger('click');
+                equal(api.current, 0, "Attempt to go to from last to first slide - looping enabled");
+
+                // no loop
+                $.extend(api.opts, { loop: false });
+
+                api.to( api.count - 1 );
+                api.$next.trigger('click');
+                equal(api.current, api.count - 1, "Attempt to go to from last to first slide - looping disabled");
+            });
+
+            test("Previous skip link", function()
+            {
+                api.to( api.count - 1 );
+                api.$prev.trigger('click');
+                equal(api.current, api.count - 2, "From last to preceding slide");
+
+                // loop
+                $.extend(api.opts, { loop: true });
+
+                api.to(0);
+                api.$prev.trigger('click');
+                equal(api.current, api.count - 1, "Attempt to go to from first to last slide - looping enabled");
+
+                // no loop
+                $.extend(api.opts, { loop: false });
+
+                api.to(0);
+                api.$prev.trigger('click');
+                equal(api.current, 0, "Attempt to go to from first to last slide - looping disabled");
+            });
+
+            test("Pagination", function()
+            {
+                var $links = api.$pagination.find('a');
+
+                $links.eq(0).trigger('click');
+                equal(api.current, 0, "Go to first slide");
+
+                $links.eq( api.count - 1 ).trigger('click');
+                equal(api.current, api.count - 1, "Go to last slide");
+            });
+
+        });
+    </script>
 	</body>
 
 </html>
