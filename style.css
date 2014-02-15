@@ -88,15 +88,16 @@ header img{
 
     text-align: center;
     padding-right: 156px;
-    font-size: 25px;
+    font-size: 26px;
 }
 
 #barre-superieure .barre-superieure-bouton{
 
     color: #890000;
     background-color: white;
-    padding: 7px 12px;
+    padding: 4px 12px;
     border-radius: 4px;
+    font-size: 17px;
 
 
 }
@@ -104,6 +105,9 @@ header img{
 #barre-superieure .barre-superieure-bouton:hover{
 
     background-color: #f7f7f7;
+
+
+
 
 
 
@@ -133,6 +137,9 @@ nav{
 padding: 15px 0;
 background-color: white;
 text-align: center;
+width: 100%;
+z-index:99;
+
 
 }
 
@@ -148,7 +155,7 @@ padding:0;
 padding-left: 150px;
 margin:0;
 width: 560px;
-font-size: 30px;
+font-size: 33px;
 display: inline-block;
 font-family: 'Yanone Kaffeesatz';
 
@@ -206,6 +213,34 @@ nav ul li a:hover{
   
 }
 
+
+    
+    #slider li {
+        width:260px;
+        height:400px;
+        overflow:hidden;
+        float:left;
+    }
+    
+    #slider p {
+        height:150px;
+        padding:0 10px;
+        opacity:.7;
+        color:#fff;
+        background:#000;
+        -webkit-transition: margin-top .2s ease-out;
+        -moz-transition: margin-top .2s ease-out;
+        transition: margin-top .2s ease-out;
+    }
+    
+    #slider li:hover p {
+        margin-top:-150px;
+    }
+
+
+
+
+
 #container .controls li{
     display: inline-block;
 }
@@ -246,6 +281,30 @@ nav ul li a:hover{
     background-color: green;
 }
 
+.filter{
+    margin: 40px 40px 10px 0px;
+    background-color: #890000;
+    padding: 10px 10px;
+    border-radius: 4px;
+    color: white;
+    font-size: 19px;
+
+
+}
+
+.filter-first{
+
+    margin-left: 60px;
+}
+
+.filter:hover{
+
+        background-color: #a70101;
+        background-image:url("images/degrade.png");
+        cursor: pointer;
+
+}
+
 
 
 #contact-gauche{
@@ -263,6 +322,7 @@ nav ul li a:hover{
     float: left;
 
 
+
     
 }
 
@@ -277,6 +337,7 @@ width: 100%;
 height: 500px;
 color: white;
 padding-top: 10px;
+box-shadow: 0px 0px 6px #000;
 }
 
 #contact input{
