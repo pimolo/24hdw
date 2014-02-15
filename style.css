@@ -63,7 +63,7 @@ header, #contact{
 }
 
 
-header img{
+header #barre-superieure img{
 
     position: absolute;
     top: 0px;
@@ -144,7 +144,15 @@ z-index:99;
 
 }
 
+#reseaux-sociaux{
 
+    margin-left: 100px;
+}
+
+#reseaux-sociaux{
+
+    margin-top: 10px;
+}
 
 
 
@@ -153,25 +161,25 @@ nav ul{
 
 
 padding:0;
-padding-left: 150px;
+padding-left: 0px;
 margin:0;
-width: 560px;
+width: 700px;
 font-size: 30px;
 display: inline-block;
 font-family: 'Yanone Kaffeesatz';
 
 
+
+
 }
 
 
 
-nav form {
-    display: inline-block;
 
-}
 
-nav form input{
-text-align: right;
+nav ul li img{
+margin-top: 20px;
+cursor: pointer;
 
 }
 
@@ -179,9 +187,14 @@ text-align: right;
 nav ul li{
 
     display:inline;
-    padding: 15px 50px 16px 50px;
+    padding: 16px 40px 15px 40px;
+
+        -webkit-transition: background-color .3s ease-out;
+        -moz-transition: background-color .3s ease-out;
+        transition: background-color .3s ease-out;
+
 }
-nav ul li:hover{
+nav ul li.correction:hover{
 
     background-color: #e3e3e3;
 
