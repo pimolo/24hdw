@@ -227,6 +227,7 @@ nav ul li a:hover{
         padding:0 10px;
         opacity:.7;
         color:#fff;
+        font-size: 23px;
         background:#000;
         -webkit-transition: margin-top .2s ease-out;
         -moz-transition: margin-top .2s ease-out;
@@ -282,9 +283,9 @@ nav ul li a:hover{
 }
 
 .filter{
-    margin: 40px 40px 10px 0px;
+    margin: 40px 64px 10px 0px;
     background-color: #890000;
-    padding: 10px 10px;
+    padding: 10px 15px;
     border-radius: 4px;
     color: white;
     font-size: 19px;
@@ -304,6 +305,8 @@ nav ul li a:hover{
         cursor: pointer;
 
 }
+
+
 
 
 
