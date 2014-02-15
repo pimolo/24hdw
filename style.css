@@ -2,17 +2,52 @@
 body{
 	margin:0;
     padding:0;
-    background: url('images/background.jpg') repeat scroll;
+    background: url('images/parallax2.jpg') repeat scroll;
     background-size: 100%;
     width: 100%;
     font-family: 'Roboto', helvetica;
     font-weight: 300;
 
-}   
+}
+
+*:not(.correction),
+*:not(.correction):after,
+*:not(.correction):before {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
 
 
+.tri .main #Grid .mix{
+    display: none;
+    opacity: 0;
+/*    width: 200px;
+    height: 200px;
+    vertical-align: top;
+    margin-bottom: 20px;
+    background: #ccc;
+    color: #fff;
 
+    font-size: 30px;
+    text-align: center;
+    line-height: 200px;*/
+}
 
+#container #Grid #cat1 {
+    background-color: red;
+}
+
+#container #Grid #cat2 {
+    background-color: blue;
+}
+
+#container #Grid #cat3 {
+    background-color: green;
+}
+ 
 header, #contact{
 
     width: 100%;
@@ -57,7 +92,7 @@ header img{
 #barre-superieure .barre-superieure-bouton:hover{
 
     background-color: #f7f7f7;
-  
+
 
 
 }
@@ -65,7 +100,7 @@ header img{
 #barre-superieure .barre-superieure-bouton a{
 
     color: #890000;
-   
+
 
 }
 
@@ -83,9 +118,9 @@ header img{
 
 nav{
 
-padding: 5px 0 0 0;
+padding: 15px 0;
 background-color: white;
-    
+
 }
 
 
@@ -97,7 +132,7 @@ nav ul{
 
 
 padding:0;
-padding-left: 350px;
+padding-left: 300px;
 margin:0;
 width: 560px;
 font-size: 30px;
@@ -118,16 +153,14 @@ nav form {
 nav form input{
 position: absolute;
 bottom: 0px;
-right: -205px;
+right: -255px;
 
 }
 
 nav ul li{
 
     display:inline;
-    padding: 15px 50px;
-   
-
+    padding: 5px 50px;
 }
 nav ul li:hover{
 
@@ -153,21 +186,15 @@ nav ul li a:hover{
 
 #slider{
 
-    height: 400px;
+    height: 403px;
     margin:0;
     background-color: white;
+    border-bottom: 10px solid #890000;
   
 }
 
-
-/* /////////////////   */
-
-
-
-
-
-#container{
-
+#container .controls li{
+    display: inline-block;
 }
 
 .bloc-container{
@@ -179,7 +206,7 @@ nav ul li a:hover{
 
 
 
-#container #Grid .mix{
+/*#container #Grid .mix{
     display: none;
     opacity: 0;
     width: 180px;
@@ -193,7 +220,7 @@ nav ul li a:hover{
     text-align: center;
     line-height: 200px;
 }
-
+*/
 #container #Grid #cat1 {
     background-color: red;
 }
@@ -205,6 +232,7 @@ nav ul li a:hover{
 #container #Grid #cat3 {
     background-color: green;
 }
+
 
 
 #contact-gauche{

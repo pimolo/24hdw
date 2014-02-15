@@ -1,32 +1,42 @@
 <!DOCTYPE html>
 <html lang="fr">
-	<head>
+<head>
 
-		<meta charset="UTF-8" />
-		<title>Cinéma RedRoom</title>
-		<link rel="stylesheet" type="text/css" href="style.css" />
-		<meta name="viewport" content="width=device-width" />
-        <link href='http://fonts.googleapis.com/css?family=Roboto:300,400' rel='stylesheet' type='text/css'>
-        <link href='http://fonts.googleapis.com/css?family=Yanone+Kaffeesatz' rel='stylesheet' type='text/css'>
-        <link rel="stylesheet" type="text/css" href="css/default.css" />
-        <link rel="stylesheet" type="text/css" href="css/component.css" />
-        <link rel="stylesheet" href="example.css" />
-        <link rel="stylesheet" href="slideshow.css" />
-        <link rel="stylesheet" href="scripts/qunit-1.10.0.css" />
-        <script src="js/modernizr.custom.js"></script>
-      
+  <meta charset="UTF-8" />
+  <title>Cinéma RedRoom</title>
+  <link rel="stylesheet" type="text/css" href="style.css" />
+  <meta name="viewport" content="width=device-width" />
+  <link href='http://fonts.googleapis.com/css?family=Roboto:300,400' rel='stylesheet' type='text/css'>
+  <link href='http://fonts.googleapis.com/css?family=Yanone+Kaffeesatz' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="scripts/qunit-1.10.0.css" />
+  <!-- Tri -->
+  <!-- <link rel="stylesheet" type="text/css" href="css/default.css" /> -->
+  <link rel="stylesheet" type="text/css" href="css/component.css" />
 
-	
-	</head>
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+  <script src="js/modernizr.custom.js"></script>
+  <script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-7243260-2']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+})();
+
+</script>
+</head>
 
 
-<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
 <script type="text/javascript" src="scripts/jquery.parallax-1.1.3.js"></script>
 
 
 <script type="text/javascript">
 $(document).ready(function(){
-    
+
 
     //.parallax(xPosition, speedFactor, outerHeight) options:
     //xPosition - Horizontal position of the element
@@ -38,254 +48,280 @@ $(document).ready(function(){
 </script>
 
 
-	<body>
-        <header>
-            <div id="barre-superieure">
-                <div id="contenu-barre-superieure">
-                    <img src="images/logo.png" alt=""/>
-                        
-                        <a href=""><span class="barre-superieure-bouton">Connection</span></a>
-                        <a href=""><span class="barre-superieure-bouton">Inscription</span></a>
-                </div>    
+<body>
+<header>
+    <div id="barre-superieure">
+        <div id="contenu-barre-superieure">
+            <img src="images/logo.png" alt=""/>
+            <a href=""><span class="barre-superieure-bouton">Connection</span></a>
+            <a href=""><span class="barre-superieure-bouton">Inscription</span></a>
+        </div>
 
-            </div>
-            <nav>
+    </div>
+    <nav class="correction">
+        <ul class="correction">
+            <li class="correction"><a href="#">ACCUEIL</a></li>
+            <li class="correction"><a href="#">FILMS</a></li>
+            <li class="correction"><a href="#">CONTACT</a></li>
+        </ul>
 
-                 <ul>
-                    <li><a href="#">ACCUEIL</a></li>
-                    <li><a href="#">FILMS</a></li>
-                    <li><a href="#">CONTACT</a></li>  
-                </ul>
-
-                <form method="post" action="traitement.php">
-                   <input type="text" name="pseudo" placeholder="Rechercher" />
-                </form>
-
-            </nav>
-		</header>
-            <div id="slider">
+        <form method="post" action="traitement.php">
+            <input type="text" name="pseudo" placeholder="Rechercher" />
+        </form>
+    </nav>
+</header>
 
 
+<div id="slider">
+    <div class="slideshow" data-visible="4" data-pagination="false" data-offset="3">
+        <ul class="carousel">
+            <li class="slide">
+                <img src="images/affiches/affiche_1.jpg" alt="" width="260" height="400" />
+            </li>
+            <li class="slide">
+                <img src="images/affiches/affiche_2.jpg" alt="" width="260" height="400" />
+            </li>
+            <li class="slide">
+                <img src="images/affiches/affiche_3.jpg" alt="" width="260" height="400" />
+            </li>
+            <li class="slide">
+                <img src="images/affiches/affiche_4.jpg" alt="" width="260" height="400" />
+            </li>
+            <li class="slide">
+                <img src="images/affiches/affiche_5.jpg" alt="" width="260" height="400" />
+            </li>
+            <li class="slide">
+                <img src="images/affiches/affiche_6.jpg" alt="" width="260" height="400" />
+            </li>
+            <li class="slide">
+                <img src="images/affiches/affiche_7.jpg" alt="" width="260" height="400" />
+            </li>
+            <li class="slide">
+                <img src="images/affiches/affiche_8.jpg" alt="" width="260" height="400" />
+            </li>
+            <li class="slide">
+                <img src="images/affiches/affiche_9.jpg" alt="" width="260" height="400" />
+            </li>
+            <li class="slide">
+                <img src="images/affiches/affiche_10.jpg" alt="" width="260" height="400" />
+            </li>
+            <li class="slide">
+                <img src="images/affiches/affiche_11.jpg" alt="" width="260" height="400" />
+            </li>
+            <li class="slide">
+                <img src="images/affiches/affiche_12.jpg" alt="" width="260" height="400" />
+            </li>
+            <li class="slide">
+                <img src="images/affiches/affiche_13.jpg" alt="" width="260" height="400" />
+            </li>
+            <li class="slide">
+                <img src="images/affiches/affiche_14.jpg" alt="" width="260" height="400" />
+            </li>
+        </ul>
+    </div>
+</div>
+
+
+<div id="container">
+
+    <ul class="controls">
+        <li class="filter" data-filter="cat1">cat1</li>
+        <li class="filter" data-filter="cat2">cat2</li>
+        <li class="filter" data-filter="cat3">cat3</li>
+    </ul>
+<!--             <ul id="Grid">
+                <li id="cat1" class="mix cat1"></li>
+                <li id="cat2" class="mix cat2"></li>
+                <li id="cat2" class="mix cat2"></li>
+                <li id="cat2" class="mix cat2"></li>
+                <li id="cat1" class="mix cat1"></li>
+                <li id="cat1" class="mix cat1"></li>
+                <li id="cat1" class="mix cat1"></li>
+                <li id="cat1" class="mix cat1"></li>
+                <li id="cat1" class="mix cat1"></li>
+                <li id="cat3" class="mix cat3"></li>
+                <li id="cat3" class="mix cat3"></li>
+                <li id="cat3" class="mix cat3"></li>
+                <li id="cat2" class="mix cat2"></li>
+                <li id="cat2" class="mix cat2"></li>
+                <li id="cat2" class="mix cat2"></li>
+                <li id="cat2" class="mix cat2"></li>
+                <li id="cat3" class="mix cat3"></li>
+                <li id="cat3" class="mix cat3"></li>
+                <li id="cat1" class="mix cat1"></li>
+                <li id="cat3" class="mix cat3"></li>
+            </ul> -->
 
 
 
-               <div class="slideshow" data-visible="4" data-pagination="false" data-offset="3">
-                    <ul class="carousel">
-                        <li class="slide">
-                            <img src="images/affiches/affiche_1.jpg" alt="" width="260" height="400" />
+
+
+
+            <div class="tri">
+                <div class="main">
+                    <ul id="Grid" class="og-grid">
+                        <li class="mix cat2">
+                            <a href="http://cargocollective.com/jaimemartinez/" data-largesrc="images/thumbs/1.jpg" data-title="Azuki bean" data-description="Swiss chard pumpkin bunya nuts maize plantain aubergine napa cabbage soko coriander sweet pepper water spinach winter purslane shallot tigernut lentil beetroot.">
+                                <img src="images/thumbs/1.jpg" alt="img01"/>
+                            </a>
                         </li>
-                        <li class="slide">
-                            <img src="images/affiches/affiche_2.jpg" alt="" width="260" height="400" />
+                        <li class="mix cat3">
+                            <a href="http://cargocollective.com/jaimemartinez/" data-largesrc="images/thumbs/2.jpg" data-title="Veggies sunt bona vobis" data-description="Komatsuna prairie turnip wattle seed artichoke mustard horseradish taro rutabaga ricebean carrot black-eyed pea turnip greens beetroot yarrow watercress kombu.">
+                                <img src="images/thumbs/2.jpg" alt="img02"/>
+                            </a>
                         </li>
-                        <li class="slide">
-                            <img src="images/affiches/affiche_3.jpg" alt="" width="260" height="400" />
+                        <li class="mix cat1">
+                            <a href="http://cargocollective.com/jaimemartinez/" data-largesrc="images/thumbs/3.jpg" data-title="Dandelion horseradish" data-description="Cabbage bamboo shoot broccoli rabe chickpea chard sea lettuce lettuce ricebean artichoke earthnut pea aubergine okra brussels sprout avocado tomato.">
+                                <img src="images/thumbs/3.jpg" alt="img03"/>
+                            </a>
                         </li>
-                        <li class="slide">
-                            <img src="images/affiches/affiche_4.jpg" alt="" width="260" height="400" />
+                        <li class="mix cat2">
+                            <a href="http://cargocollective.com/jaimemartinez/" data-largesrc="images/thumbs/4.jpg" data-title="Sea lettuce" data-description="Bell pepper eggplant water spinach bell pepper radicchio kale artichoke earthnut pea beet greens carrot celtuce peanut radish mustard jícama tomato bamboo shoot quandong.">
+                                <img src="images/thumbs/4.jpg" alt="img04"/>
+                            </a>
                         </li>
-                        <li class="slide">
-                            <img src="images/affiches/affiche_5.jpg" alt="" width="260" height="400" />
+                        <li class="mix cat3">
+                            <a href="http://cargocollective.com/jaimemartinez/" data-largesrc="images/thumbs/5.jpg" data-title="Catsear celery turnip" data-description="Kohlrabi fennel taro salsify bok choy arugula bell pepper gourd groundnut sierra leone bologi pumpkin.">
+                                <img src="images/thumbs/5.jpg" alt="img05"/>
+                            </a>
                         </li>
-                        <li class="slide">
-                            <img src="images/affiches/affiche_6.jpg" alt="" width="260" height="400" />
+                        <li class="mix cat1">
+                            <a href="http://cargocollective.com/jaimemartinez/" data-largesrc="images/thumbs/6.jpg" data-title="Cabbage bamboo shoot" data-description="Catsear celery turnip greens bush tomato okra parsley bell pepper cabbage bamboo shoot dulse kombu shallot quandong lettuce seakale.">
+                                <img src="images/thumbs/6.jpg" alt="img06"/>
+                            </a>
                         </li>
-                        <li class="slide">
-                            <img src="images/affiches/affiche_7.jpg" alt="" width="260" height="400" />
+                        <li class="mix cat2">
+                            <a href="http://cargocollective.com/jaimemartinez/" data-largesrc="images/thumbs/7.jpg" data-title="Asparagus nori burdock" data-description="Cabbage bamboo shoot broccoli rabe chickpea chard sea lettuce lettuce ricebean artichoke earthnut pea aubergine okra brussels sprout avocado tomato.">
+                                <img src="images/thumbs/7.jpg" alt="img07"/>
+                            </a>
                         </li>
-                        <li class="slide">
-                            <img src="images/affiches/affiche_8.jpg" alt="" width="260" height="400" />
+                        <li class="mix cat3">
+                            <a href="http://cargocollective.com/jaimemartinez/" data-largesrc="images/thumbs/8.jpg" data-title="Dandelion horseradish" data-description="Bell pepper eggplant water spinach bell pepper radicchio kale artichoke earthnut pea beet greens carrot celtuce peanut radish mustard jícama tomato bamboo shoot quandong.">
+                                <img src="images/thumbs/8.jpg" alt="img08"/>
+                            </a>
                         </li>
-                        <li class="slide">
-                            <img src="images/affiches/affiche_9.jpg" alt="" width="260" height="400" />
+                        <li class="mix cat1">
+                            <a href="http://cargocollective.com/jaimemartinez/" data-largesrc="images/thumbs/9.jpg" data-title="Coriander artichoke" data-description="Catsear celery turnip greens bush tomato okra parsley bell pepper cabbage bamboo shoot dulse kombu shallot quandong lettuce seakale.">
+                                <img src="images/thumbs/9.jpg" alt="img09"/>
+                            </a>
                         </li>
-                         <li class="slide">
-                            <img src="images/affiches/affiche_10.jpg" alt="" width="260" height="400" />
+                        <li class="mix cat2">
+                            <a href="http://cargocollective.com/jaimemartinez/" data-largesrc="images/thumbs/10.jpg" data-title="Sea lettuce" data-description="Kohlrabi fennel taro salsify bok choy arugula bell pepper gourd groundnut sierra leone bologi pumpkin.">
+                                <img src="images/thumbs/10.jpg" alt="img10"/>
+                            </a>
                         </li>
-                        <li class="slide">
-                            <img src="images/affiches/affiche_11.jpg" alt="" width="260" height="400" />
+                        <li class="mix cat3">
+                            <a href="http://cargocollective.com/jaimemartinez/" data-largesrc="images/thumbs/11.jpg" data-title="Wakame grape maize" data-description="Melon parsley pumpkin brussels sprout scallion catsear. Aubergine scallion garlic pumpkin parsnip broccoli rabe salad kombu chicory chickpea garbanzo bitterleaf.">
+                                <img src="images/thumbs/11.jpg" alt="img11"/>
+                            </a>
                         </li>
-                        <li class="slide">
-                            <img src="images/affiches/affiche_12.jpg" alt="" width="260" height="400" />
+                        <li class="mix cat1">
+                            <a href="http://cargocollective.com/jaimemartinez/" data-largesrc="images/thumbs/12.jpg" data-title="Catsear celery turnip" data-description="Cabbage bamboo shoot broccoli rabe chickpea chard sea lettuce lettuce ricebean artichoke earthnut pea aubergine okra brussels sprout avocado tomato.">
+                                <img src="images/thumbs/12.jpg" alt="img12"/>
+                            </a>
                         </li>
-                        <li class="slide">
-                            <img src="images/affiches/affiche_13.jpg" alt="" width="260" height="400" />
+                        <li class="mix cat1">
+                            <a href="http://cargocollective.com/jaimemartinez/" data-largesrc="images/thumbs/13.jpg" data-title="Cabbage bamboo shoot" data-description="Kohlrabi fennel taro salsify bok choy arugula bell pepper gourd groundnut sierra leone bologi pumpkin.">
+                                <img src="images/thumbs/13.jpg" alt="img13"/>
+                            </a>
                         </li>
-                        <li class="slide">
-                            <img src="images/affiches/affiche_14.jpg" alt="" width="260" height="400" />
+                        <li class="mix cat3">
+                            <a href="http://cargocollective.com/jaimemartinez/" data-largesrc="images/thumbs/14.jpg" data-title="Dandelion horseradish" data-description="Bell pepper eggplant water spinach bell pepper radicchio kale artichoke earthnut pea beet greens carrot celtuce peanut radish mustard jícama tomato bamboo shoot quandong.">
+                                <img src="images/thumbs/14.jpg" alt="img14"/>
+                            </a>
+                        </li>
+                        <li class="mix cat1">
+                            <a href="http://cargocollective.com/jaimemartinez/" data-largesrc="images/thumbs/15.jpg" data-title="Asparagus nori burdock" data-description="Catsear celery turnip greens bush tomato okra parsley bell pepper cabbage bamboo shoot dulse kombu shallot quandong lettuce seakale.">
+                                <img src="images/thumbs/15.jpg" alt="img15"/>
+                            </a>
                         </li>
                     </ul>
                 </div>
+            </div>
+        </div><!-- /container -->
+
+        <div id="contact">
+
+            <div id="bloc-contact">
+
+               <h1>Nous Contacter</h1>
+
+               <div id="contact-gauche">
+
+                    <form method="post" action="traitement.php">
+                        <p>
+                            <label>Adresse e-mail</label>:<br/> <input type="text" name="email" /><br/><br/>
+                            <label>Confirmez votre adresse e-mail</label>:<br/><input type="text" name="confirm-email" /><br/><br/>
+                            <label>Sujet du message</label>:<br/><input type="text" name="sujet" /><br/><br/>
+                            <label>Votre message</label>:<br />
+                            <textarea name="message" rows="10" cols="50"></textarea>
+                        </p>
+                    </form>
+                </div>
+                <div id="contact-droit">
+
+                    <iframe width="100%" height="350" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.fr/maps?f=q&amp;source=s_q&amp;hl=fr&amp;geocode=&amp;q=I.U.T.+de+Troyes,+Rue+Quebec,+Troyes&amp;aq=t&amp;sll=48.292406,4.07612&amp;sspn=0.07458,0.154324&amp;ie=UTF8&amp;hq=I.U.T.+de+Troyes,+Rue+Quebec,+Troyes&amp;t=m&amp;ll=48.268165,4.079701&amp;spn=0.006295,0.006295&amp;output=embed"></iframe><br /><small><a href="https://maps.google.fr/maps?f=q&amp;source=embed&amp;hl=fr&amp;geocode=&amp;q=I.U.T.+de+Troyes,+Rue+Quebec,+Troyes&amp;aq=t&amp;sll=48.292406,4.07612&amp;sspn=0.07458,0.154324&amp;ie=UTF8&amp;hq=I.U.T.+de+Troyes,+Rue+Quebec,+Troyes&amp;t=m&amp;ll=48.268165,4.079701&amp;spn=0.006295,0.006295" style="color:#0000FF;text-align:left">Agrandir le plan</a></small>
 
 
-                
-
-
-           </div>
-        <div id="container">
-
-            <ul>
-                <li class="filter" data-filter="cat1">cat1</li>
-                <li class="filter" data-filter="cat2">cat2</li>
-                <li class="filter" data-filter="cat3">cat3</li>
-            </ul>
-            <ul id="Grid">
-                <li id="cat1" class="mix cat1"></li>
-                <li id="cat2" class="mix cat2"></li>
-                <li id="cat2" class="mix cat2"></li>
-                <li id="cat2" class="mix cat2"></li>
-                <li id="cat1" class="mix cat1"></li>
-                <li id="cat1" class="mix cat1"></li>
-                <li id="cat1" class="mix cat1"></li>
-                <li id="cat1" class="mix cat1"></li>
-                <li id="cat1" class="mix cat1"></li>
-                <li id="cat3" class="mix cat3"></li>
-                <li id="cat3" class="mix cat3"></li>
-                <li id="cat3" class="mix cat3"></li>
-                <li id="cat2" class="mix cat2"></li>
-                <li id="cat2" class="mix cat2"></li>
-                <li id="cat2" class="mix cat2"></li>
-                <li id="cat2" class="mix cat2"></li>
-                <li id="cat3" class="mix cat3"></li>
-                <li id="cat3" class="mix cat3"></li>
-                <li id="cat1" class="mix cat1"></li>
-                <li id="cat3" class="mix cat3"></li>
-            </ul>
-
-
-           <div class="bloc-container">
-
-             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur nec tortor imperdiet ipsum gravida commodo. Cras scelerisque elit non egestas dignissim. Fusce ut eros venenatis, posuere erat egestas, interdum sapien. Aenean vulputate diam nisl, quis eleifend est lacinia eu. Praesent leo arcu, volutpat quis euismod quis, semper id est. Etiam bibendum dignissim leo id interdum. Ut in odio at tellus dictum tristique. Mauris varius purus vitae ipsum tempus commodo.
-
-        Nunc at odio diam. Nunc vel elit vulputate, bibendum libero vitae, placerat arcu. Mauris volutpat, dui ut dapibus euismod, mauris massa scelerisque enim, in ullamcorper tellus augue a lorem. Aliquam non suscipit felis. Mauris ultrices elit sit amet risus pellentesque interdum. Ut a luctus mauris, ut bibendum elit. Duis diam orci, volutpat vel metus malesuada, blandit congue lacus. Maecenas vulputate libero ut eleifend lobortis.
-           </div>
-
-            <div class="bloc-container">
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur nec tortor imperdiet ipsum gravida commodo. Cras scelerisque elit non egestas dignissim. Fusce ut eros venenatis, posuere erat egestas, interdum sapien. Aenean vulputate diam nisl, quis eleifend est lacinia eu. Praesent leo arcu, volutpat quis euismod quis, semper id est. Etiam bibendum dignissim leo id interdum. Ut in odio at tellus dictum tristique. Mauris varius purus vitae ipsum tempus commodo.
-
-        Nunc at odio diam. Nunc vel elit vulputate, bibendum libero vitae, placerat arcu. Mauris volutpat, dui ut dapibus euismod, mauris massa scelerisque enim, in ullamcorper tellus augue a lorem. Aliquam non suscipit felis. Mauris ultrices elit sit amet risus pellentesque interdum. Ut a luctus mauris, ut bibendum elit. Duis diam orci, volutpat vel metus malesuada, blandit congue lacus. Maecenas vulputate libero ut eleifend lobortis.
-           </div>
-
-            <div class="bloc-container">
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur nec tortor imperdiet ipsum gravida commodo. Cras scelerisque elit non egestas dignissim. Fusce ut eros venenatis, posuere erat egestas, interdum sapien. Aenean vulputate diam nisl, quis eleifend est lacinia eu. Praesent leo arcu, volutpat quis euismod quis, semper id est. Etiam bibendum dignissim leo id interdum. Ut in odio at tellus dictum tristique. Mauris varius purus vitae ipsum tempus commodo.
-
-        Nunc at odio diam. Nunc vel elit vulputate, bibendum libero vitae, placerat arcu. Mauris volutpat, dui ut dapibus euismod, mauris massa scelerisque enim, in ullamcorper tellus augue a lorem. Aliquam non suscipit felis. Mauris ultrices elit sit amet risus pellentesque interdum. Ut a luctus mauris, ut bibendum elit. Duis diam orci, volutpat vel metus malesuada, blandit congue lacus. Maecenas vulputate libero ut eleifend lobortis.
-           </div>
-
-            <div class="bloc-container">
-
-             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur nec tortor imperdiet ipsum gravida commodo. Cras scelerisque elit non egestas dignissim. Fusce ut eros venenatis, posuere erat egestas, interdum sapien. Aenean vulputate diam nisl, quis eleifend est lacinia eu. Praesent leo arcu, volutpat quis euismod quis, semper id est. Etiam bibendum dignissim leo id interdum. Ut in odio at tellus dictum tristique. Mauris varius purus vitae ipsum tempus commodo.
-
-        Nunc at odio diam. Nunc vel elit vulputate, bibendum libero vitae, placerat arcu. Mauris volutpat, dui ut dapibus euismod, mauris massa scelerisque enim, in ullamcorper tellus augue a lorem. Aliquam non suscipit felis. Mauris ultrices elit sit amet risus pellentesque interdum. Ut a luctus mauris, ut bibendum elit. Duis diam orci, volutpat vel metus malesuada, blandit congue lacus. Maecenas vulputate libero ut eleifend lobortis.
-           </div>
-
-            <div class="bloc-container">
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur nec tortor imperdiet ipsum gravida commodo. Cras scelerisque elit non egestas dignissim. Fusce ut eros venenatis, posuere erat egestas, interdum sapien. Aenean vulputate diam nisl, quis eleifend est lacinia eu. Praesent leo arcu, volutpat quis euismod quis, semper id est. Etiam bibendum dignissim leo id interdum. Ut in odio at tellus dictum tristique. Mauris varius purus vitae ipsum tempus commodo.
-
-        Nunc at odio diam. Nunc vel elit vulputate, bibendum libero vitae, placerat arcu. Mauris volutpat, dui ut dapibus euismod, mauris massa scelerisque enim, in ullamcorper tellus augue a lorem. Aliquam non suscipit felis. Mauris ultrices elit sit amet risus pellentesque interdum. Ut a luctus mauris, ut bibendum elit. Duis diam orci, volutpat vel metus malesuada, blandit congue lacus. Maecenas vulputate libero ut eleifend lobortis.
-           </div>
-
-            <div class="bloc-container">
-
-               
-
-
-
-
-
-           </div>
+                </div>
+            </div>
         </div>
 
-            <div id="contact">
-            
-                <div id="bloc-contact">
+    <footer>
+        <ul>
+            <li>Crédits</li>
+            <li>Plan du Site</li>
+            <li>Mentions Légales</li>
+            <li>Cinéma RedRoom 2014</li>
+            <li>Tous droits réservés</li>
+        </ul>
+    </footer>
+    
 
-                         <h1>Nous Contacter</h1>
+    <script src="jquery.mixitup.min.js"></script>
+    <script type="text/javascript">
+    $(function(){
 
-                        <div id="contact-gauche">
-                            
-                            <form method="post" action="traitement.php">
-                                <p>
-                                    <label>Adresse e-mail</label>:<br/> <input type="text" name="email" /><br/><br/>
-                                    <label>Confirmez votre adresse e-mail</label>:<br/><input type="text" name="confirm-email" /><br/><br/>
-                                    <label>Sujet du message</label>:<br/><input type="text" name="sujet" /><br/><br/>
-                                    <label>Votre message</label>:<br />
-                                    <textarea name="message" rows="10" cols="50"></textarea>
-                                </p>
-                            </form>
+        $('#Grid').mixitup();
 
-                            
-                        </div>
-                        <div id="contact-droit">
+    });</script>
 
-                            <iframe width="100%" height="350" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.fr/maps?f=q&amp;source=s_q&amp;hl=fr&amp;geocode=&amp;q=I.U.T.+de+Troyes,+Rue+Quebec,+Troyes&amp;aq=t&amp;sll=48.292406,4.07612&amp;sspn=0.07458,0.154324&amp;ie=UTF8&amp;hq=I.U.T.+de+Troyes,+Rue+Quebec,+Troyes&amp;t=m&amp;ll=48.268165,4.079701&amp;spn=0.006295,0.006295&amp;output=embed"></iframe><br /><small><a href="https://maps.google.fr/maps?f=q&amp;source=embed&amp;hl=fr&amp;geocode=&amp;q=I.U.T.+de+Troyes,+Rue+Quebec,+Troyes&amp;aq=t&amp;sll=48.292406,4.07612&amp;sspn=0.07458,0.154324&amp;ie=UTF8&amp;hq=I.U.T.+de+Troyes,+Rue+Quebec,+Troyes&amp;t=m&amp;ll=48.268165,4.079701&amp;spn=0.006295,0.006295" style="color:#0000FF;text-align:left">Agrandir le plan</a></small>
-
-                            
-                        </div>
-                    </div>
-
-                    
-            </div>
-                    <footer>
-
-                    <ul>
-                        <li>Crédits</li>
-                        <li>Plan du Site</li>
-                        <li>Mentions Légales</li>
-                        <li>Cinéma RedRoom 2014</li>
-                        <li>Tous droits réservés</li>
-                    </ul>
-
-
-
-                    </footer>
-
-
-
-<script src="jquery.mixitup.min.js"></script>
-<script type="text/javascript">
-$(function(){
-
-    $('#Grid').mixitup();
-
-});</script>
-
-
-<script src="scripts/slideshow.js"></script>
+    <script src="scripts/slideshow.js"></script>
     <script src="scripts/qunit-1.10.0.js"></script>
 
     <script>
-        $(function()
-        {
-            var $s, api;
+    $(function()
+    {
+        var $s, api;
 
-            $.fx.off = true;
-            QUnit.config.reorder = false;
+        $.fx.off = true;
+        QUnit.config.reorder = false;
 
-            var lifecycle = {
-                setup: function()
+        var lifecycle = {
+            setup: function()
+            {
+                if ( ! api )
                 {
-                    if ( ! api )
-                    {
-                        $s = $('.slideshow').slides();
-                        api = $s.eq(0).data('slides');
-                    }
+                    $s = $('.slideshow').slides();
+                    api = $s.eq(0).data('slides');
                 }
-            };
+            }
+        };
 
-            module("Setup", lifecycle);
+        module("Setup", lifecycle);
 
-            test("$(collection).slides()", function()
-            {
-                ok(api.count > 0, "Check slides are found");
-                ok(api.$pagination.length > 0, "Check pagination created");
-                ok(api.$next.length > 0, "Check next skip link created");
-                ok(api.$prev.length > 0, "Check previous skip link created");
-            });
+        test("$(collection).slides()", function()
+        {
+            ok(api.count > 0, "Check slides are found");
+            ok(api.$pagination.length > 0, "Check pagination created");
+            ok(api.$next.length > 0, "Check next skip link created");
+            ok(api.$prev.length > 0, "Check previous skip link created");
+        });
 
-            test("API", function()
-            {
-                equal((typeof api).toLowerCase() == "object" && ! $.isEmptyObject(api), true, "API returned");
-            });
+        test("API", function()
+        {
+            equal((typeof api).toLowerCase() == "object" && ! $.isEmptyObject(api), true, "API returned");
+        });
 
             //
             // API tests
@@ -360,14 +396,14 @@ $(function(){
                 equal(api.current, api.count - 1, "Out of bounds (total + 1) - looping disabled");
             });
 
-            test(".redraw()", function()
-            {
-                api.redraw("crossfade");
-                equal(api.opts.transition, "crossfade", "Test crossfade registered");
+test(".redraw()", function()
+{
+    api.redraw("crossfade");
+    equal(api.opts.transition, "crossfade", "Test crossfade registered");
 
-                api.redraw("scroll");
-                equal(api.opts.transition, "scroll", "Test scroll registered");
-            });
+    api.redraw("scroll");
+    equal(api.opts.transition, "scroll", "Test scroll registered");
+});
 
             //
             // user controls
@@ -429,7 +465,14 @@ $(function(){
             });
 
         });
-    </script>
-	</body>
+</script>
+<script src="js/grid.js"></script>
+<script>
+$(function() {
+    Grid.init();
+});
+</script>
+<script src="../../codrops/adpacks/demoad.js"></script>
+</body>
 
 </html>
