@@ -24,16 +24,6 @@ body{
 .tri .main #Grid .mix{
     display: none;
     opacity: 0;
-/*    width: 200px;
-    height: 200px;
-    vertical-align: top;
-    margin-bottom: 20px;
-    background: #ccc;
-    color: #fff;
-
-    font-size: 30px;
-    text-align: center;
-    line-height: 200px;*/
 }
 
 #container #Grid #cat1 {
