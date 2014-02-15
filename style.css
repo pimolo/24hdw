@@ -47,7 +47,7 @@ body{
 #container #Grid #cat3 {
     background-color: green;
 }
- 
+
 header, #contact{
 
     width: 100%;
@@ -80,7 +80,7 @@ header img{
     background-color: #890000;
     height: 60px;
     box-shadow: 10px 10px 5px #888888;
-    
+
 
 }
 
@@ -210,18 +210,18 @@ nav ul li a:hover{
     background-color: white;
     border-bottom: 10px solid #890000;
     border-top: 1px solid #890000;
-  
+
 }
 
 
-    
+
     #slider li {
         width:260px;
         height:400px;
         overflow:hidden;
         float:left;
     }
-    
+
     #slider p {
         height:150px;
         padding:0 10px;
@@ -232,7 +232,7 @@ nav ul li a:hover{
         -moz-transition: margin-top .2s ease-out;
         transition: margin-top .2s ease-out;
     }
-    
+
     #slider li:hover p {
         margin-top:-150px;
     }
@@ -240,7 +240,9 @@ nav ul li a:hover{
 
 
 
-
+#container .controls {
+    text-align: center;
+}
 #container .controls li{
     display: inline-block;
 }
@@ -282,7 +284,7 @@ nav ul li a:hover{
 }
 
 .filter{
-    margin: 40px 40px 10px 0px;
+    margin: 40px 10px 10px 10px;
     background-color: #890000;
     padding: 10px 10px;
     border-radius: 4px;
@@ -323,7 +325,7 @@ nav ul li a:hover{
 
 
 
-    
+
 }
 
 
@@ -341,28 +343,28 @@ box-shadow: 0px 0px 6px #000;
 }
 
 #contact input{
-      
-width: 218px;     
-height: 37px;     
--webkit-border-radius: 3px/4px;     
--moz-border-radius: 3px/4px;     
-border-radius: 3px/4px;     
-background-color: rgba(255,255,255,0);     
-border: solid 2px #fff; 
+
+width: 218px;
+height: 37px;
+-webkit-border-radius: 3px/4px;
+-moz-border-radius: 3px/4px;
+border-radius: 3px/4px;
+background-color: rgba(255,255,255,0);
+border: solid 2px #fff;
 color: white;
 font-size: 17px;
 
 }
 
 #contact textarea{
-      
-width: 400px;     
-height: 150px;     
--webkit-border-radius: 3px/4px;     
--moz-border-radius: 3px/4px;     
-border-radius: 3px/4px;     
-background-color: rgba(255,255,255,0);     
-border: solid 2px #fff; 
+
+width: 400px;
+height: 150px;
+-webkit-border-radius: 3px/4px;
+-moz-border-radius: 3px/4px;
+border-radius: 3px/4px;
+background-color: rgba(255,255,255,0);
+border: solid 2px #fff;
 color: white;
 font-size: 17px;
 

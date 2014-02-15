@@ -1,73 +1,37 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-
   <meta charset="UTF-8" />
   <title>Cinéma RedRoom</title>
-  <link rel="stylesheet" type="text/css" href="style.css" />
   <meta name="viewport" content="width=device-width" />
+  <script src="js/modernizr.custom.js"></script>
+  <link rel="stylesheet" type="text/css" href="style.css" />
   <link rel="icon" type="image/png" href="images/favicon.jpg" />
+  <!-- Fonts -->
   <link href='http://fonts.googleapis.com/css?family=Roboto:300,400' rel='stylesheet' type='text/css'>
   <link href='http://fonts.googleapis.com/css?family=Yanone+Kaffeesatz' rel='stylesheet' type='text/css'>
-  <link rel="stylesheet" href="scripts/qunit-1.10.0.css" />
   <!-- Tri -->
-  <!-- <link rel="stylesheet" type="text/css" href="css/default.css" /> -->
   <link rel="stylesheet" type="text/css" href="css/component.css" />
-
+  <!-- Slider -->
   <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
-  <script src="js/modernizr.custom.js"></script>
-  <script type="text/javascript">
-
-  var _gaq = _gaq || [];
-  _gaq.push(['_setAccount', 'UA-7243260-2']);
-  _gaq.push(['_trackPageview']);
-
-  (function() {
-    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-})();
-
-</script>
-
-
-
-
-
-
+  <script src="scripts/slider.js"></script>
+  <script src="scripts/qunit-1.10.0.js"></script>
+  <link rel="stylesheet" href="scripts/qunit-1.10.0.css" />
   <script src="scripts/slideshow.js"></script>
-    <script src="scripts/qunit-1.10.0.js"></script>
+  <script type="text/javascript" src="scripts/jquery.parallax-1.1.3.js"></script>
+  <script type="text/javascript">
+    $(document).ready(function(){
 
 
-<!-- Inclusion script Slider -->
-    <script src="scripts/slider.js"></script> 
-<!-- FIN -->
+        //.parallax(xPosition, speedFactor, outerHeight) options:
+        //xPosition - Horizontal position of the element
+        //inertia - speed to move relative to vertical scroll. Example: 0.1 is one tenth the speed of scrolling, 2 is twice the speed of scrolling
+        //outerHeight (true/false) - Whether or not jQuery should use it's outerHeight option to determine when a section is in the viewport
+        $('body').parallax("90%", 1);
 
-
-
-
+    })
+  </script>
 </head>
-
-
-<script type="text/javascript" src="scripts/jquery.parallax-1.1.3.js"></script>
-
-
-<script type="text/javascript">
-$(document).ready(function(){
-
-
-    //.parallax(xPosition, speedFactor, outerHeight) options:
-    //xPosition - Horizontal position of the element
-    //inertia - speed to move relative to vertical scroll. Example: 0.1 is one tenth the speed of scrolling, 2 is twice the speed of scrolling
-    //outerHeight (true/false) - Whether or not jQuery should use it's outerHeight option to determine when a section is in the viewport
-    $('body').parallax("90%", 1);
-
-})
-</script>
-
-
-
-
 
 <body>
 <header>
@@ -75,22 +39,22 @@ $(document).ready(function(){
         <div id="contenu-barre-superieure">
             <img src="images/logo.png" alt="" id="logo"/>
             <span>Cinéma a Compiègne</span>
-            <a href=""><span class="barre-superieure-bouton">Connection</span></a>
-            <a href=""><span class="barre-superieure-bouton">Inscription</span></a>
+            <a href="#"><span class="barre-superieure-bouton">Connection</span></a>
+            <a href="#"><span class="barre-superieure-bouton">Inscription</span></a>
         </div>
 
     </div>
-        <nav class="correction">
-            <ul class="correction">
-                <li class="correction"><a href="#accueil">ACCUEIL</a></li>
-                <li class="correction"><a href="#films">FILMS</a></li>
-                <li class="correction"><a href="#contact">CONTACT</a></li>
-            </ul>
-        
-            <form method="post" action="traitement.php">
-                <input type="text" name="pseudo" placeholder="Rechercher" />
-            </form>
-        </nav>
+    <nav class="correction">
+        <ul class="correction">
+            <li class="correction"><a href="#accueil">ACCUEIL</a></li>
+            <li class="correction"><a href="#films">FILMS</a></li>
+            <li class="correction"><a href="#contact">CONTACT</a></li>
+        </ul>
+
+        <form method="post" action="#">
+            <input type="text" name="pseudo" placeholder="Rechercher" />
+        </form>
+    </nav>
 </header>
 
 
@@ -99,10 +63,10 @@ $(document).ready(function(){
         <ul class="carousel">
             <li class="slide">
                 <img src="images/affiches/affiche_1.jpg" alt="" width="260" height="400" />
-                <p> 
-                    <strong>Texte</strong> 
+                <p>
+                    <strong>Texte</strong>
                     Texte
-                </p> 
+                </p>
             </li>
             <li class="slide">
                 <img src="images/affiches/affiche_2.jpg" alt="" width="260" height="400" />
@@ -155,37 +119,6 @@ $(document).ready(function(){
         <li class="filter" data-filter="cat2">SORTIES DE LA SEMAINE</li>
         <li class="filter" data-filter="cat3">SORTIES PROCHAINES</li>
     </ul>
-
-
-
-<!--             <ul id="Grid">
-                <li id="cat1" class="mix cat1"></li>
-                <li id="cat2" class="mix cat2"></li>
-                <li id="cat2" class="mix cat2"></li>
-                <li id="cat2" class="mix cat2"></li>
-                <li id="cat1" class="mix cat1"></li>
-                <li id="cat1" class="mix cat1"></li>
-                <li id="cat1" class="mix cat1"></li>
-                <li id="cat1" class="mix cat1"></li>
-                <li id="cat1" class="mix cat1"></li>
-                <li id="cat3" class="mix cat3"></li>
-                <li id="cat3" class="mix cat3"></li>
-                <li id="cat3" class="mix cat3"></li>
-                <li id="cat2" class="mix cat2"></li>
-                <li id="cat2" class="mix cat2"></li>
-                <li id="cat2" class="mix cat2"></li>
-                <li id="cat2" class="mix cat2"></li>
-                <li id="cat3" class="mix cat3"></li>
-                <li id="cat3" class="mix cat3"></li>
-                <li id="cat1" class="mix cat1"></li>
-                <li id="cat3" class="mix cat3"></li>
-            </ul> -->
-
-
-
-
-
-
             <div class="tri">
                 <div class="main">
                     <ul id="Grid" class="og-grid">
@@ -263,7 +196,7 @@ $(document).ready(function(){
                             <a href="http://cargocollective.com/jaimemartinez/" data-largesrc="images/affiches/affiche_7.jpg" data-title="Asparagus nori burdock" data-description="Catsear celery turnip greens bush tomato okra parsley bell pepper cabbage bamboo shoot dulse kombu shallot quandong lettuce seakale.">
                                 <img src="images/affiches/affiche_7.jpg" width="200" height="320" alt="img15"/>
                             </a>
-                        </li> 
+                        </li>
                     </ul>
                 </div>
             </div>
@@ -305,7 +238,7 @@ $(document).ready(function(){
             <li>Tous droits réservés</li>
         </ul>
     </footer>
-    
+
 
     <script src="jquery.mixitup.min.js"></script>
     <script type="text/javascript">
@@ -316,7 +249,7 @@ $(document).ready(function(){
     });</script>
 
 
-  
+
 <script src="js/grid.js"></script>
 <script>
 $(function() {
