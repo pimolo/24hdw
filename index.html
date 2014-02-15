@@ -6,6 +6,7 @@
   <title>Cinéma RedRoom</title>
   <link rel="stylesheet" type="text/css" href="style.css" />
   <meta name="viewport" content="width=device-width" />
+  <link rel="icon" type="image/png" href="images/favicon.jpg" />
   <link href='http://fonts.googleapis.com/css?family=Roboto:300,400' rel='stylesheet' type='text/css'>
   <link href='http://fonts.googleapis.com/css?family=Yanone+Kaffeesatz' rel='stylesheet' type='text/css'>
   <link rel="stylesheet" href="scripts/qunit-1.10.0.css" />
@@ -68,6 +69,7 @@ $(document).ready(function(){
     <div id="barre-superieure">
         <div id="contenu-barre-superieure">
             <img src="images/logo.png" alt=""/>
+            <span>Cinéma a Compiègne</span>
             <a href=""><span class="barre-superieure-bouton">Connection</span></a>
             <a href=""><span class="barre-superieure-bouton">Inscription</span></a>
         </div>
@@ -75,9 +77,9 @@ $(document).ready(function(){
     </div>
     <nav class="correction">
         <ul class="correction">
-            <li class="correction"><a href="#">ACCUEIL</a></li>
-            <li class="correction"><a href="#">FILMS</a></li>
-            <li class="correction"><a href="#">CONTACT</a></li>
+            <li class="correction"><a href="#accueil">ACCUEIL</a></li>
+            <li class="correction"><a href="#films">FILMS</a></li>
+            <li class="correction"><a href="#contact">CONTACT</a></li>
         </ul>
     
         <form method="post" action="traitement.php">
@@ -139,7 +141,7 @@ $(document).ready(function(){
 
 <div id="container">
 
-    <ul class="controls">
+    <ul class="controls" id="films">
         <li class="filter" data-filter="cat1">cat1</li>
         <li class="filter" data-filter="cat2">cat2</li>
         <li class="filter" data-filter="cat3">cat3</li>
@@ -176,26 +178,26 @@ $(document).ready(function(){
                 <div class="main">
                     <ul id="Grid" class="og-grid">
                         <li class="mix cat2">
-                            <a href="http://cargocollective.com/jaimemartinez/" data-largesrc="images/thumbs/1.jpg" data-title="Azuki bean" data-description="Swiss chard pumpkin bunya nuts maize plantain aubergine napa cabbage soko coriander sweet pepper water spinach winter purslane shallot tigernut lentil beetroot.">
-                                <img src="images/thumbs/1.jpg" alt="img01"/>
+                            <a href="" data-largesrc="images/affiches/affiche_f1.jpg" data-title="Albatar - Le Corsaire de l'Espace" data-description="2977. Albator, capitaine du vaisseau Arcadia, est un corsaire de l’espace. Il est condamné à mort, mais reste insaisissable.  Le jeune Yama, envoyé pour l’assassiner, s’infiltre dans l’Arcadia, alors qu’Albator décide d’entrer en guerre contre la Coalition Gaia afin de défendre sa planète d’origine, la Terre.">
+                                <img src="images/affiches/affiche_f1.jpg" width="200" height="320" alt="img01"/>
                             </a>
                         </li>
                         <li class="mix cat3">
-                            <a href="http://cargocollective.com/jaimemartinez/" data-largesrc="images/thumbs/2.jpg" data-title="Veggies sunt bona vobis" data-description="Komatsuna prairie turnip wattle seed artichoke mustard horseradish taro rutabaga ricebean carrot black-eyed pea turnip greens beetroot yarrow watercress kombu.">
-                                <img src="images/thumbs/2.jpg" alt="img02"/>
+                            <a href="" data-largesrc="images/affiches/affiche_f2.jpg" data-title="Veggies sunt bona vobis" data-description="Komatsuna prairie turnip wattle seed artichoke mustard horseradish taro rutabaga ricebean carrot black-eyed pea turnip greens beetroot yarrow watercress kombu.">
+                                <img src="images/affiches/affiche_f2.jpg" width="200" height="320" alt="img02"/>
                             </a>
                         </li>
                         <li class="mix cat1">
-                            <a href="http://cargocollective.com/jaimemartinez/" data-largesrc="images/thumbs/3.jpg" data-title="Dandelion horseradish" data-description="Cabbage bamboo shoot broccoli rabe chickpea chard sea lettuce lettuce ricebean artichoke earthnut pea aubergine okra brussels sprout avocado tomato.">
-                                <img src="images/thumbs/3.jpg" alt="img03"/>
+                            <a href="" data-largesrc="images/affiches/affiche_f3.jpg" data-title="Dandelion horseradish" data-description="Cabbage bamboo shoot broccoli rabe chickpea chard sea lettuce lettuce ricebean artichoke earthnut pea aubergine okra brussels sprout avocado tomato.">
+                                <img src="images/affiches/affiche_f3.jpg" width="200" height="320" alt="img03"/>
                             </a>
                         </li>
                         <li class="mix cat2">
-                            <a href="http://cargocollective.com/jaimemartinez/" data-largesrc="images/thumbs/4.jpg" data-title="Sea lettuce" data-description="Bell pepper eggplant water spinach bell pepper radicchio kale artichoke earthnut pea beet greens carrot celtuce peanut radish mustard jícama tomato bamboo shoot quandong.">
-                                <img src="images/thumbs/4.jpg" alt="img04"/>
+                            <a href="" data-largesrc="images/affiches/affiche_f4.jpg" data-title="Sea lettuce" data-description="Bell pepper eggplant water spinach bell pepper radicchio kale artichoke earthnut pea beet greens carrot celtuce peanut radish mustard jícama tomato bamboo shoot quandong.">
+                                <img src="images/affiches/affiche_f4.jpg" width="200" height="320" alt="img04"/>
                             </a>
                         </li>
-                        <li class="mix cat3">
+                        <!--<li class="mix cat3">
                             <a href="http://cargocollective.com/jaimemartinez/" data-largesrc="images/thumbs/5.jpg" data-title="Catsear celery turnip" data-description="Kohlrabi fennel taro salsify bok choy arugula bell pepper gourd groundnut sierra leone bologi pumpkin.">
                                 <img src="images/thumbs/5.jpg" alt="img05"/>
                             </a>
@@ -249,7 +251,7 @@ $(document).ready(function(){
                             <a href="http://cargocollective.com/jaimemartinez/" data-largesrc="images/thumbs/15.jpg" data-title="Asparagus nori burdock" data-description="Catsear celery turnip greens bush tomato okra parsley bell pepper cabbage bamboo shoot dulse kombu shallot quandong lettuce seakale.">
                                 <img src="images/thumbs/15.jpg" alt="img15"/>
                             </a>
-                        </li>
+                        </li> -->
                     </ul>
                 </div>
             </div>
@@ -308,7 +310,24 @@ $(function() {
     Grid.init();
 });
 </script>
-<script src="../../codrops/adpacks/demoad.js"></script>
+
+
+<script>
+   $(document).ready(function(){
+    $('a[href^="#"]').on('click',function (e) {
+        e.preventDefault();
+
+        var target = this.hash,
+        $target = $(target);
+
+        $('html, body').stop().animate({
+            'scrollTop': $target.offset().top
+        }, 900, 'swing', function () {
+            window.location.hash = target;
+        });
+    });
+});
+</script>
 </body>
 
 </html>
