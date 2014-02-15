@@ -1,15 +1,23 @@
 body{
 	margin:0;
     padding:0;
-    background: url('images/background.jpg') repeat scroll;
+    background: url('images/parallax2.jpg') repeat scroll;
     background-size: 100%;
     width: 100%;
     font-family: 'Roboto', helvetica;
     font-weight: 300;
 
-}   
+}
 
-
+*:not(.correction),
+*:not(.correction):after,
+*:not(.correction):before {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
 
 #container #Grid .mix{
     display: none;
@@ -80,7 +88,7 @@ header img{
 #barre-superieure .barre-superieure-bouton:hover{
 
     background-color: #f7f7f7;
-  
+
 
 
 }
@@ -88,7 +96,7 @@ header img{
 #barre-superieure .barre-superieure-bouton a{
 
     color: #890000;
-   
+
 
 }
 
@@ -108,7 +116,7 @@ nav{
 
 padding: 15px 0;
 background-color: white;
-    
+
 }
 
 
@@ -120,7 +128,7 @@ nav ul{
 
 
 padding:0;
-padding-left: 350px;
+padding-left: 500px;
 margin:0;
 width: 560px;
 font-size: 30px;
@@ -148,7 +156,7 @@ nav ul li{
 
     display:inline;
     padding: 15px 30px;
-   
+
 
 }
 nav ul li:hover{
@@ -179,7 +187,7 @@ nav ul li a:hover{
     width: 33%;
     float: left;
     height: 100%;
-  
+
 }
 
 .last-element-slider{
