@@ -1,3 +1,22 @@
+#preloader  {
+     	position: fixed;
+     	top: 0;
+     	left: 0;
+     	right: 0;
+     	bottom: 0;
+     	background-color: #fefefe;
+     	z-index: 1000;
+    	height: 100%;
+     }
+
+#preloader img  {
+     position: absolute;
+ 	left: 50%;
+ 	top: 50%;
+ 	margin-top: -8px;
+ 	margin-left: -8px;
+}
+
 .og-grid {
 	list-style: none;
 	padding: 20px 0;
@@ -189,7 +208,7 @@
 	font-size: 0;
 	padding: 25px;
 	left:0px;
-    
+
 
 }
 
@@ -215,5 +234,5 @@
 
 	.og-fullimg { display: none; }
 	.og-details { float: none; width: 100%; }
-	
+
 }

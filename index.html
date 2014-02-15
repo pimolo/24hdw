@@ -34,6 +34,9 @@
 </head>
 
 <body>
+<div id="preloader">
+      <img src="images/loader.gif">
+    </div>
 <header>
     <div id="barre-superieure">
         <div id="contenu-barre-superieure">
@@ -326,6 +329,12 @@ $(function() {
 
 
 <script>
+jQuery(window).on('load', function() {
+            // will fade out the whole DIV that covers the website.
+        jQuery("#preloader").delay(1000).fadeOut("slow");
+
+    });
+
    $(document).ready(function(){
     $('a[href^="#"]').on('click',function (e) {
         e.preventDefault();
