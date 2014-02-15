@@ -74,8 +74,12 @@ header img{
 }
 
 #barre-superieure{
+
+    background: url("images/degrade.png") repeat-x;
+
     background-color: #890000;
     height: 60px;
+    box-shadow: 10px 10px 5px #888888;
     
 
 }
@@ -277,9 +281,15 @@ footer{
     background-color: #323232;
 }
 
+footer ul{
+
+    padding-top: 15px  !important;
+}
+
 footer ul li{
 
     display:inline;
     padding: 0 20px;
     color:white;
+    padding-right: 25px !important;
 }
