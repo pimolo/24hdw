@@ -140,7 +140,9 @@ z-index:99;
 }
 
 
-
+.sticky-wrapper {
+    height: 67px !important;
+}
 
 nav ul{
 
